@@ -1,0 +1,1 @@
+java weka.classifiers.trees.J48 -t /Users/Akira/Desktop/pose.arff -c first -z SourcedJ48 > /Users/Akira/Desktop/pose.java
