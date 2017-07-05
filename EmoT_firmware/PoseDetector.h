@@ -2,1362 +2,871 @@ namespace m2d {
 class PoseDetector {
   public:
     enum Pose {
-      question,
-      exclamation,
-      arm,
-      surprise,
-      anxious,
-      vsign,
-      tengu,
-      pray,
-      standing
+      question,vsign,arm,standing,beer
     };
+    
     static double detect(int i[5]) {
-      double p = -1;
-      p = PoseDetector::N69e2c341264(i);
-      return p;
-    }
-    static double N69e2c341264(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 1;
-      } else if (i[2] <= 10208.0) {
-        p = PoseDetector::N268116b6265(i);
-      } else if (i[2] > 10208.0) {
-        p = PoseDetector::N4fd1b3bc281(i);
-      }
-      return p;
-    }
-    static double N268116b6265(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 8;
-      } else if (i[4] <= 10367.0) {
-        p = PoseDetector::N64fa1a79266(i);
-      } else if (i[4] > 10367.0) {
-        p = PoseDetector::N5a808671279(i);
-      }
-      return p;
-    }
-    static double N64fa1a79266(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 8;
-      } else if (i[0] <= 10287.0) {
-        p = PoseDetector::N5fe031b9267(i);
-      } else if (i[0] > 10287.0) {
-        p = PoseDetector::N63c4068b275(i);
-      }
-      return p;
-    }
-    static double N5fe031b9267(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 8;
-      } else if (i[4] <= 9745.0) {
-        p = PoseDetector::N77e099db268(i);
-      } else if (i[4] > 9745.0) {
-        p = PoseDetector::N4ee1d6a3272(i);
-      }
-      return p;
-    }
-    static double N77e099db268(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 8;
-      } else if (i[2] <= 9922.0) {
-        p = PoseDetector::N3a953659269(i);
-      } else if (i[2] > 9922.0) {
-        p = 2;
-      }
-      return p;
-    }
-    static double N3a953659269(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 5;
-      } else if (i[1] <= 6196.0) {
-        p = PoseDetector::N1a232b1b270(i);
-      } else if (i[1] > 6196.0) {
-        p = 8;
-      }
-      return p;
-    }
-    static double N1a232b1b270(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 5;
-      } else if (i[1] <= 6145.0) {
-        p = 5;
-      } else if (i[1] > 6145.0) {
-        p = PoseDetector::N7ae30704271(i);
-      }
-      return p;
-    }
-    static double N7ae30704271(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 5;
-      } else if (i[1] <= 6179.0) {
-        p = 5;
-      } else if (i[1] > 6179.0) {
-        p = 8;
-      }
-      return p;
-    }
-    static double N4ee1d6a3272(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 5;
-      } else if (i[1] <= 6332.0) {
-        p = 5;
-      } else if (i[1] > 6332.0) {
-        p = PoseDetector::N4cd28fca273(i);
-      }
-      return p;
-    }
-    static double N4cd28fca273(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 8;
-      } else if (i[4] <= 9846.0) {
-        p = 8;
-      } else if (i[4] > 9846.0) {
-        p = PoseDetector::N13de3e2d274(i);
-      }
-      return p;
-    }
-    static double N13de3e2d274(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 7;
-      } else if (i[0] <= 9897.0) {
-        p = 7;
-      } else if (i[0] > 9897.0) {
-        p = 5;
-      }
-      return p;
-    }
-    static double N63c4068b275(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 4;
-      } else if (i[4] <= 9720.0) {
-        p = PoseDetector::N5a89c2d8276(i);
-      } else if (i[4] > 9720.0) {
-        p = PoseDetector::Na572158277(i);
-      }
-      return p;
-    }
-    static double N5a89c2d8276(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 4;
-      } else if (i[1] <= 6506.0) {
-        p = 4;
-      } else if (i[1] > 6506.0) {
-        p = 2;
-      }
-      return p;
-    }
-    static double Na572158277(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 4;
-      } else if (i[2] <= 10000.0) {
-        p = PoseDetector::N5e4e1db5278(i);
-      } else if (i[2] > 10000.0) {
-        p = 4;
-      }
-      return p;
-    }
-    static double N5e4e1db5278(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 5;
-      } else if (i[1] <= 6298.0) {
-        p = 5;
-      } else if (i[1] > 6298.0) {
-        p = 4;
-      }
-      return p;
-    }
-    static double N5a808671279(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 1;
-      } else if (i[1] <= 6213.0) {
-        p = 1;
-      } else if (i[1] > 6213.0) {
-        p = PoseDetector::N2bfa9322280(i);
-      }
-      return p;
-    }
-    static double N2bfa9322280(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 1;
-      } else if (i[1] <= 6281.0) {
-        p = 1;
-      } else if (i[1] > 6281.0) {
-        p = 6;
-      }
-      return p;
-    }
-    static double N4fd1b3bc281(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 0;
-      } else if (i[1] <= 6454.0) {
-        p = PoseDetector::N506f2494282(i);
-      } else if (i[1] > 6454.0) {
-        p = PoseDetector::N6210ab7c371(i);
-      }
-      return p;
-    }
-    static double N506f2494282(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 6;
-      } else if (i[4] <= 10666.0) {
-        p = PoseDetector::N30ca99cd283(i);
-      } else if (i[4] > 10666.0) {
-        p = PoseDetector::N1ad43115359(i);
-      }
-      return p;
-    }
-    static double N30ca99cd283(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 6;
-      } else if (i[0] <= 9521.0) {
-        p = PoseDetector::N45377ac1284(i);
-      } else if (i[0] > 9521.0) {
-        p = PoseDetector::N793cf8e8299(i);
-      }
-      return p;
-    }
-    static double N45377ac1284(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 6;
-      } else if (i[3] <= 11678.0) {
-        p = PoseDetector::N3d5c3867285(i);
-      } else if (i[3] > 11678.0) {
-        p = PoseDetector::N60ce12ee298(i);
-      }
-      return p;
-    }
-    static double N3d5c3867285(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 6;
-      } else if (i[1] <= 6367.0) {
-        p = PoseDetector::N717b11a9286(i);
-      } else if (i[1] > 6367.0) {
-        p = PoseDetector::N4af13595294(i);
-      }
-      return p;
-    }
-    static double N717b11a9286(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 6;
-      } else if (i[4] <= 10367.0) {
-        p = PoseDetector::N46c4a873287(i);
-      } else if (i[4] > 10367.0) {
-        p = PoseDetector::N190f3a51288(i);
-      }
-      return p;
-    }
-    static double N46c4a873287(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 7;
-      } else if (i[4] <= 10341.0) {
-        p = 7;
-      } else if (i[4] > 10341.0) {
-        p = 6;
-      }
-      return p;
-    }
-    static double N190f3a51288(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 6;
-      } else if (i[2] <= 10694.0) {
-        p = PoseDetector::N36bda8b1289(i);
-      } else if (i[2] > 10694.0) {
-        p = PoseDetector::N73feb5a0292(i);
-      }
-      return p;
-    }
-    static double N36bda8b1289(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 6;
-      } else if (i[1] <= 6298.0) {
-        p = PoseDetector::N5d8e188a290(i);
-      } else if (i[1] > 6298.0) {
-        p = 6;
-      }
-      return p;
-    }
-    static double N5d8e188a290(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 7;
-      } else if (i[1] <= 6281.0) {
-        p = PoseDetector::N1bed3c02291(i);
-      } else if (i[1] > 6281.0) {
-        p = 6;
-      }
-      return p;
-    }
-    static double N1bed3c02291(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 6;
-      } else if (i[0] <= 9278.0) {
-        p = 6;
-      } else if (i[0] > 9278.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N73feb5a0292(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 6;
-      } else if (i[0] <= 9399.0) {
-        p = PoseDetector::N574656de293(i);
-      } else if (i[0] > 9399.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N574656de293(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 7;
-      } else if (i[1] <= 6281.0) {
-        p = 7;
-      } else if (i[1] > 6281.0) {
-        p = 6;
-      }
-      return p;
-    }
-    static double N4af13595294(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 6;
-      } else if (i[2] <= 10502.0) {
-        p = PoseDetector::N21f4efa3295(i);
-      } else if (i[2] > 10502.0) {
-        p = PoseDetector::N57a0c7bf296(i);
-      }
-      return p;
-    }
-    static double N21f4efa3295(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 6;
-      } else if (i[1] <= 6402.0) {
-        p = 6;
-      } else if (i[1] > 6402.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N57a0c7bf296(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 6;
-      } else if (i[0] <= 9399.0) {
-        p = PoseDetector::N7c99f98a297(i);
-      } else if (i[0] > 9399.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N7c99f98a297(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 6;
-      } else if (i[3] <= 11527.0) {
-        p = 6;
-      } else if (i[3] > 11527.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N60ce12ee298(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 6;
-      } else if (i[0] <= 9302.0) {
-        p = 6;
-      } else if (i[0] > 9302.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N793cf8e8299(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 3;
-      } else if (i[2] <= 10529.0) {
-        p = PoseDetector::N11f98587300(i);
-      } else if (i[2] > 10529.0) {
-        p = PoseDetector::N85ed7e4321(i);
-      }
-      return p;
-    }
-    static double N11f98587300(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 7;
-      } else if (i[3] <= 11557.0) {
-        p = PoseDetector::N14ad6b49301(i);
-      } else if (i[3] > 11557.0) {
-        p = PoseDetector::N34ed297303(i);
-      }
-      return p;
-    }
-    static double N14ad6b49301(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 6;
-      } else if (i[0] <= 9620.0) {
-        p = PoseDetector::N55e903a302(i);
-      } else if (i[0] > 9620.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N55e903a302(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 7;
-      } else if (i[1] <= 6315.0) {
-        p = 7;
-      } else if (i[1] > 6315.0) {
-        p = 6;
-      }
-      return p;
-    }
-    static double N34ed297303(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 3;
-      } else if (i[0] <= 10025.0) {
-        p = PoseDetector::N2be3b933304(i);
-      } else if (i[0] > 10025.0) {
-        p = PoseDetector::N5708e2c0320(i);
-      }
-      return p;
-    }
-    static double N2be3b933304(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 3;
-      } else if (i[4] <= 10287.0) {
-        p = PoseDetector::N7393d9c7305(i);
-      } else if (i[4] > 10287.0) {
-        p = PoseDetector::N2aee2196311(i);
-      }
-      return p;
-    }
-    static double N7393d9c7305(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 3;
-      } else if (i[2] <= 10448.0) {
-        p = 3;
-      } else if (i[2] > 10448.0) {
-        p = PoseDetector::N6fbed318306(i);
-      }
-      return p;
-    }
-    static double N6fbed318306(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 3;
-      } else if (i[4] <= 10234.0) {
-        p = PoseDetector::N591505f8307(i);
-      } else if (i[4] > 10234.0) {
-        p = PoseDetector::N2a6c480c310(i);
-      }
-      return p;
-    }
-    static double N591505f8307(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 3;
-      } else if (i[1] <= 6332.0) {
-        p = 3;
-      } else if (i[1] > 6332.0) {
-        p = PoseDetector::N733b0a78308(i);
-      }
-      return p;
-    }
-    static double N733b0a78308(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 3;
-      } else if (i[3] <= 11800.0) {
-        p = PoseDetector::N292c8762309(i);
-      } else if (i[3] > 11800.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N292c8762309(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 3;
-      } else if (i[1] <= 6436.0) {
-        p = 3;
-      } else if (i[1] > 6436.0) {
-        p = 2;
-      }
-      return p;
-    }
-    static double N2a6c480c310(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 3;
-      } else if (i[1] <= 6230.0) {
-        p = 3;
-      } else if (i[1] > 6230.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N2aee2196311(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 3;
-      } else if (i[4] <= 10502.0) {
-        p = PoseDetector::N77df14de312(i);
-      } else if (i[4] > 10502.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N77df14de312(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 7;
-      } else if (i[0] <= 9795.0) {
-        p = 7;
-      } else if (i[0] > 9795.0) {
-        p = PoseDetector::N56d3384d313(i);
-      }
-      return p;
-    }
-    static double N56d3384d313(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 3;
-      } else if (i[3] <= 11861.0) {
-        p = PoseDetector::N451573c3314(i);
-      } else if (i[3] > 11861.0) {
-        p = PoseDetector::N7d809158318(i);
-      }
-      return p;
-    }
-    static double N451573c3314(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 3;
-      } else if (i[4] <= 10475.0) {
-        p = PoseDetector::N3632aa4315(i);
-      } else if (i[4] > 10475.0) {
-        p = PoseDetector::Nd8e5d13317(i);
-      }
-      return p;
-    }
-    static double N3632aa4315(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 3;
-      } else if (i[3] <= 11708.0) {
-        p = PoseDetector::N638476b8316(i);
-      } else if (i[3] > 11708.0) {
-        p = 3;
-      }
-      return p;
-    }
-    static double N638476b8316(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 7;
-      } else if (i[1] <= 6367.0) {
-        p = 7;
-      } else if (i[1] > 6367.0) {
-        p = 3;
-      }
-      return p;
-    }
-    static double Nd8e5d13317(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 7;
-      } else if (i[3] <= 11739.0) {
-        p = 7;
-      } else if (i[3] > 11739.0) {
-        p = 3;
-      }
-      return p;
-    }
-    static double N7d809158318(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 3;
-      } else if (i[0] <= 9897.0) {
-        p = PoseDetector::N3c668c7319(i);
-      } else if (i[0] > 9897.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N3c668c7319(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 3;
-      } else if (i[1] <= 6332.0) {
-        p = 3;
-      } else if (i[1] > 6332.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N5708e2c0320(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 7;
-      } else if (i[1] <= 6419.0) {
-        p = 7;
-      } else if (i[1] > 6419.0) {
-        p = 4;
-      }
-      return p;
-    }
-    static double N85ed7e4321(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 3;
-      } else if (i[4] <= 10103.0) {
-        p = PoseDetector::Naafbe07322(i);
-      } else if (i[4] > 10103.0) {
-        p = PoseDetector::N4f1e041a327(i);
-      }
-      return p;
-    }
-    static double Naafbe07322(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 2;
-      } else if (i[4] <= 9496.0) {
-        p = 2;
-      } else if (i[4] > 9496.0) {
-        p = PoseDetector::N17e4c30c323(i);
-      }
-      return p;
-    }
-    static double N17e4c30c323(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 3;
-      } else if (i[1] <= 6315.0) {
-        p = PoseDetector::N2bc15515324(i);
-      } else if (i[1] > 6315.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N2bc15515324(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 7;
-      } else if (i[4] <= 9922.0) {
-        p = 7;
-      } else if (i[4] > 9922.0) {
-        p = PoseDetector::N21b8ec24325(i);
-      }
-      return p;
-    }
-    static double N21b8ec24325(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 3;
-      } else if (i[4] <= 10077.0) {
-        p = 3;
-      } else if (i[4] > 10077.0) {
-        p = PoseDetector::N739740c7326(i);
-      }
-      return p;
-    }
-    static double N739740c7326(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 3;
-      } else if (i[2] <= 10584.0) {
-        p = 3;
-      } else if (i[2] > 10584.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N4f1e041a327(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 7;
-      } else if (i[2] <= 10611.0) {
-        p = PoseDetector::N3b9f6f8a328(i);
-      } else if (i[2] > 10611.0) {
-        p = PoseDetector::N7ee57968354(i);
-      }
-      return p;
-    }
-    static double N3b9f6f8a328(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 7;
-      } else if (i[3] <= 11587.0) {
-        p = 7;
-      } else if (i[3] > 11587.0) {
-        p = PoseDetector::N6053eb9a329(i);
-      }
-      return p;
-    }
-    static double N6053eb9a329(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 3;
-      } else if (i[1] <= 6230.0) {
-        p = PoseDetector::N2590fcde330(i);
-      } else if (i[1] > 6230.0) {
-        p = PoseDetector::N60e025d8333(i);
-      }
-      return p;
-    }
-    static double N2590fcde330(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 3;
-      } else if (i[4] <= 10234.0) {
-        p = 3;
-      } else if (i[4] > 10234.0) {
-        p = PoseDetector::N51c96616331(i);
-      }
-      return p;
-    }
-    static double N51c96616331(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 7;
-      } else if (i[2] <= 10584.0) {
-        p = PoseDetector::N7d4d584c332(i);
-      } else if (i[2] > 10584.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N7d4d584c332(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 3;
-      } else if (i[4] <= 10448.0) {
-        p = 3;
-      } else if (i[4] > 10448.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N60e025d8333(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 7;
-      } else if (i[0] <= 9897.0) {
-        p = PoseDetector::N1bd4b998334(i);
-      } else if (i[0] > 9897.0) {
-        p = PoseDetector::N20ba9569347(i);
-      }
-      return p;
-    }
-    static double N1bd4b998334(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 7;
-      } else if (i[3] <= 11739.0) {
-        p = PoseDetector::N2ae4b86e335(i);
-      } else if (i[3] > 11739.0) {
-        p = PoseDetector::N6a3ccb09345(i);
-      }
-      return p;
-    }
-    static double N2ae4b86e335(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 7;
-      } else if (i[0] <= 9770.0) {
-        p = PoseDetector::Ne0853c2336(i);
-      } else if (i[0] > 9770.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double Ne0853c2336(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 3;
-      } else if (i[4] <= 10234.0) {
-        p = PoseDetector::N44b2ecc0337(i);
-      } else if (i[4] > 10234.0) {
-        p = PoseDetector::N279db91e339(i);
-      }
-      return p;
-    }
-    static double N44b2ecc0337(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 3;
-      } else if (i[1] <= 6264.0) {
-        p = PoseDetector::N3ed5547c338(i);
-      } else if (i[1] > 6264.0) {
-        p = 3;
-      }
-      return p;
-    }
-    static double N3ed5547c338(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 3;
-      } else if (i[0] <= 9695.0) {
-        p = 3;
-      } else if (i[0] > 9695.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N279db91e339(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 7;
-      } else if (i[1] <= 6298.0) {
-        p = PoseDetector::N63e474e3340(i);
-      } else if (i[1] > 6298.0) {
-        p = PoseDetector::N24ef4799343(i);
-      }
-      return p;
-    }
-    static double N63e474e3340(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 7;
-      } else if (i[0] <= 9720.0) {
-        p = PoseDetector::N2bb61651341(i);
-      } else if (i[0] > 9720.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N2bb61651341(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 7;
-      } else if (i[0] <= 9695.0) {
-        p = 7;
-      } else if (i[0] > 9695.0) {
-        p = PoseDetector::N3f733642342(i);
-      }
-      return p;
-    }
-    static double N3f733642342(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 3;
-      } else if (i[4] <= 10261.0) {
-        p = 3;
-      } else if (i[4] > 10261.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N24ef4799343(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 7;
-      } else if (i[0] <= 9720.0) {
-        p = 7;
-      } else if (i[0] > 9720.0) {
-        p = PoseDetector::N5945a0c0344(i);
-      }
-      return p;
-    }
-    static double N5945a0c0344(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 3;
-      } else if (i[4] <= 10584.0) {
-        p = 3;
-      } else if (i[4] > 10584.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N6a3ccb09345(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 3;
-      } else if (i[4] <= 10156.0) {
-        p = PoseDetector::N3d35f25c346(i);
-      } else if (i[4] > 10156.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N3d35f25c346(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 3;
-      } else if (i[1] <= 6315.0) {
-        p = 3;
-      } else if (i[1] > 6315.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N20ba9569347(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 7;
-      } else if (i[3] <= 11708.0) {
-        p = 7;
-      } else if (i[3] > 11708.0) {
-        p = PoseDetector::N39a73148348(i);
-      }
-      return p;
-    }
-    static double N39a73148348(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 3;
-      } else if (i[0] <= 10000.0) {
-        p = PoseDetector::Nf948b8a349(i);
-      } else if (i[0] > 10000.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double Nf948b8a349(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 3;
-      } else if (i[2] <= 10557.0) {
-        p = 3;
-      } else if (i[2] > 10557.0) {
-        p = PoseDetector::N61551903350(i);
-      }
-      return p;
-    }
-    static double N61551903350(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 3;
-      } else if (i[0] <= 9974.0) {
-        p = PoseDetector::N19dd45e1351(i);
-      } else if (i[0] > 9974.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N19dd45e1351(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 7;
-      } else if (i[2] <= 10584.0) {
-        p = PoseDetector::Ne16c40b352(i);
-      } else if (i[2] > 10584.0) {
-        p = PoseDetector::N78a0b566353(i);
-      }
-      return p;
-    }
-    static double Ne16c40b352(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 3;
-      } else if (i[0] <= 9922.0) {
-        p = 3;
-      } else if (i[0] > 9922.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N78a0b566353(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 3;
-      } else if (i[3] <= 11923.0) {
-        p = 3;
-      } else if (i[3] > 11923.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N7ee57968354(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 7;
-      } else if (i[3] <= 11617.0) {
-        p = 7;
-      } else if (i[3] > 11617.0) {
-        p = PoseDetector::Nb85dbee355(i);
-      }
-      return p;
-    }
-    static double Nb85dbee355(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 7;
-      } else if (i[4] <= 10475.0) {
-        p = 7;
-      } else if (i[4] > 10475.0) {
-        p = PoseDetector::N129ec2b356(i);
-      }
-      return p;
-    }
-    static double N129ec2b356(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 7;
-      } else if (i[3] <= 11708.0) {
-        p = PoseDetector::N674ffba5357(i);
-      } else if (i[3] > 11708.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N674ffba5357(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 3;
-      } else if (i[0] <= 9795.0) {
-        p = PoseDetector::N341242a0358(i);
-      } else if (i[0] > 9795.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N341242a0358(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 7;
-      } else if (i[1] <= 6350.0) {
-        p = 7;
-      } else if (i[1] > 6350.0) {
-        p = 3;
-      }
-      return p;
-    }
-    static double N1ad43115359(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 7;
-      } else if (i[2] <= 10639.0) {
-        p = PoseDetector::N60e26775360(i);
-      } else if (i[2] > 10639.0) {
-        p = PoseDetector::N2ff66404361(i);
-      }
-      return p;
-    }
-    static double N60e26775360(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 6;
-      } else if (i[0] <= 9447.0) {
-        p = 6;
-      } else if (i[0] > 9447.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N2ff66404361(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 0;
-      } else if (i[0] <= 9720.0) {
-        p = PoseDetector::N59205b35362(i);
-      } else if (i[0] > 9720.0) {
-        p = PoseDetector::N301ebdb8369(i);
-      }
-      return p;
-    }
-    static double N59205b35362(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 0;
-      } else if (i[3] <= 11497.0) {
-        p = PoseDetector::N5b442249363(i);
-      } else if (i[3] > 11497.0) {
-        p = PoseDetector::N5627156e364(i);
-      }
-      return p;
-    }
-    static double N5b442249363(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 7;
-      } else if (i[4] <= 10805.0) {
-        p = 7;
-      } else if (i[4] > 10805.0) {
-        p = 0;
-      }
-      return p;
-    }
-    static double N5627156e364(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 0;
-      } else if (i[2] <= 10694.0) {
-        p = PoseDetector::N1ff014f2365(i);
-      } else if (i[2] > 10694.0) {
-        p = PoseDetector::N1c420288367(i);
-      }
-      return p;
-    }
-    static double N1ff014f2365(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 0;
-      } else if (i[1] <= 6315.0) {
-        p = PoseDetector::N4aef2c3f366(i);
-      } else if (i[1] > 6315.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N4aef2c3f366(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 0;
-      } else if (i[3] <= 11708.0) {
-        p = 0;
-      } else if (i[3] > 11708.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N1c420288367(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 0;
-      } else if (i[3] <= 11861.0) {
-        p = 0;
-      } else if (i[3] > 11861.0) {
-        p = PoseDetector::N31b43d36368(i);
-      }
-      return p;
-    }
-    static double N31b43d36368(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 0;
-      } else if (i[0] <= 9521.0) {
-        p = 0;
-      } else if (i[0] > 9521.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N301ebdb8369(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 7;
-      } else if (i[4] <= 10721.0) {
-        p = 7;
-      } else if (i[4] > 10721.0) {
-        p = PoseDetector::N323993b6370(i);
-      }
-      return p;
-    }
-    static double N323993b6370(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 0;
-      } else if (i[0] <= 9795.0) {
-        p = 0;
-      } else if (i[0] > 9795.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N6210ab7c371(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 2;
-      } else if (i[4] <= 9871.0) {
-        p = PoseDetector::N346a8c30372(i);
-      } else if (i[4] > 9871.0) {
-        p = PoseDetector::N3315e4fb374(i);
-      }
-      return p;
-    }
-    static double N346a8c30372(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 2;
-      } else if (i[0] <= 10287.0) {
-        p = 2;
-      } else if (i[0] > 10287.0) {
-        p = PoseDetector::N3f19be32373(i);
-      }
-      return p;
-    }
-    static double N3f19be32373(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 2;
-      } else if (i[4] <= 9745.0) {
-        p = 2;
-      } else if (i[4] > 9745.0) {
-        p = 4;
-      }
-      return p;
-    }
-    static double N3315e4fb374(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 7;
-      } else if (i[0] <= 10051.0) {
-        p = PoseDetector::N626c34f0375(i);
-      } else if (i[0] > 10051.0) {
-        p = PoseDetector::N32b9c6f7383(i);
-      }
-      return p;
-    }
-    static double N626c34f0375(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 7;
-      } else if (i[3] <= 11557.0) {
-        p = 7;
-      } else if (i[3] > 11557.0) {
-        p = PoseDetector::N2e07ab0b376(i);
-      }
-      return p;
-    }
-    static double N2e07ab0b376(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 7;
-      } else if (i[0] <= 9695.0) {
-        p = 7;
-      } else if (i[0] > 9695.0) {
-        p = PoseDetector::N796e76c8377(i);
-      }
-      return p;
-    }
-    static double N796e76c8377(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 3;
-      } else if (i[2] <= 10777.0) {
-        p = PoseDetector::N433882c0378(i);
-      } else if (i[2] > 10777.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N433882c0378(int i[5]) {
-      double p = -1;
-      if (i[4] == 0) {
-        p = 3;
-      } else if (i[4] <= 10448.0) {
-        p = PoseDetector::N33102dba379(i);
-      } else if (i[4] > 10448.0) {
-        p = PoseDetector::N1ccaac61381(i);
-      }
-      return p;
-    }
-    static double N33102dba379(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 3;
-      } else if (i[2] <= 10666.0) {
-        p = 3;
-      } else if (i[2] > 10666.0) {
-        p = PoseDetector::N6b2a2886380(i);
-      }
-      return p;
-    }
-    static double N6b2a2886380(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 3;
-      } else if (i[0] <= 9820.0) {
-        p = 3;
-      } else if (i[0] > 9820.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N1ccaac61381(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 7;
-      } else if (i[1] <= 6506.0) {
-        p = PoseDetector::N3dfb230b382(i);
-      } else if (i[1] > 6506.0) {
-        p = 3;
-      }
-      return p;
-    }
-    static double N3dfb230b382(int i[5]) {
-      double p = -1;
-      if (i[0] == 0) {
-        p = 3;
-      } else if (i[0] <= 9745.0) {
-        p = 3;
-      } else if (i[0] > 9745.0) {
-        p = 7;
-      }
-      return p;
-    }
-    static double N32b9c6f7383(int i[5]) {
-      double p = -1;
-      if (i[3] == 0) {
-        p = 7;
-      } else if (i[3] <= 11557.0) {
-        p = 7;
-      } else if (i[3] > 11557.0) {
-        p = PoseDetector::N42b59c25384(i);
-      }
-      return p;
-    }
-    static double N42b59c25384(int i[5]) {
-      double p = -1;
-      if (i[2] == 0) {
-        p = 4;
-      } else if (i[2] <= 10448.0) {
-        p = 4;
-      } else if (i[2] > 10448.0) {
-        p = PoseDetector::N211e635a385(i);
-      }
-      return p;
-    }
-    static double N211e635a385(int i[5]) {
-      double p = -1;
-      if (i[1] == 0) {
-        p = 3;
-      } else if (i[1] <= 6524.0) {
-        p = 3;
-      } else if (i[1] > 6524.0) {
-        p = 4;
-      }
-      return p;
-    }
+    double p = -1;
+    p = PoseDetector::N7aada89b409(i);
+    return p;
+  }
+  static double N7aada89b409(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 4;
+    } else if (i[2] <= 10421.0) {
+    p = PoseDetector::N1f189709410(i);
+    } else if (i[2] > 10421.0) {
+    p = PoseDetector::N2dcf5b31438(i);
+    } 
+    return p;
+  }
+  static double N1f189709410(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 1;
+    } else if (i[1] <= 6332.0) {
+    p = PoseDetector::N763dfd2411(i);
+    } else if (i[1] > 6332.0) {
+    p = PoseDetector::N1e92c7ed431(i);
+    } 
+    return p;
+  }
+  static double N763dfd2411(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 1;
+    } else if (i[1] <= 6095.0) {
+    p = PoseDetector::N2dfb57c8412(i);
+    } else if (i[1] > 6095.0) {
+    p = PoseDetector::N6dde55d3418(i);
+    } 
+    return p;
+  }
+  static double N2dfb57c8412(int i[5]) {
+    double p = -1;
+    if (i[3] == 0) {
+      p = 4;
+    } else if (i[3] <= 9645.0) {
+      p = 4;
+    } else if (i[3] > 9645.0) {
+    p = PoseDetector::N5040230d413(i);
+    } 
+    return p;
+  }
+  static double N5040230d413(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 1;
+    } else if (i[1] <= 6062.0) {
+      p = 1;
+    } else if (i[1] > 6062.0) {
+    p = PoseDetector::N22bd53a4414(i);
+    } 
+    return p;
+  }
+  static double N22bd53a4414(int i[5]) {
+    double p = -1;
+    if (i[4] == 0) {
+      p = 1;
+    } else if (i[4] <= 10051.0) {
+      p = 1;
+    } else if (i[4] > 10051.0) {
+    p = PoseDetector::N3bbe45cd415(i);
+    } 
+    return p;
+  }
+  static double N3bbe45cd415(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 1;
+    } else if (i[2] <= 9820.0) {
+      p = 1;
+    } else if (i[2] > 9820.0) {
+    p = PoseDetector::N48d8b45f416(i);
+    } 
+    return p;
+  }
+  static double N48d8b45f416(int i[5]) {
+    double p = -1;
+    if (i[3] == 0) {
+      p = 4;
+    } else if (i[3] <= 10182.0) {
+    p = PoseDetector::Nb29ee56417(i);
+    } else if (i[3] > 10182.0) {
+      p = 1;
+    } 
+    return p;
+  }
+  static double Nb29ee56417(int i[5]) {
+    double p = -1;
+    if (i[0] == 0) {
+      p = 1;
+    } else if (i[0] <= 10394.0) {
+      p = 1;
+    } else if (i[0] > 10394.0) {
+      p = 4;
+    } 
+    return p;
+  }
+  static double N6dde55d3418(int i[5]) {
+    double p = -1;
+    if (i[4] == 0) {
+      p = 1;
+    } else if (i[4] <= 10025.0) {
+    p = PoseDetector::N1fd4c7ff419(i);
+    } else if (i[4] > 10025.0) {
+    p = PoseDetector::N4ff9ec75421(i);
+    } 
+    return p;
+  }
+  static double N1fd4c7ff419(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 1;
+    } else if (i[1] <= 6230.0) {
+      p = 1;
+    } else if (i[1] > 6230.0) {
+    p = PoseDetector::N4a9646ac420(i);
+    } 
+    return p;
+  }
+  static double N4a9646ac420(int i[5]) {
+    double p = -1;
+    if (i[3] == 0) {
+      p = 4;
+    } else if (i[3] <= 9546.0) {
+      p = 4;
+    } else if (i[3] > 9546.0) {
+      p = 3;
+    } 
+    return p;
+  }
+  static double N4ff9ec75421(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 1;
+    } else if (i[2] <= 9745.0) {
+    p = PoseDetector::N21131e58422(i);
+    } else if (i[2] > 9745.0) {
+    p = PoseDetector::N2b7da559425(i);
+    } 
+    return p;
+  }
+  static double N21131e58422(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 1;
+    } else if (i[1] <= 6247.0) {
+    p = PoseDetector::N6e2d345e423(i);
+    } else if (i[1] > 6247.0) {
+    p = PoseDetector::N59c93fd4424(i);
+    } 
+    return p;
+  }
+  static double N6e2d345e423(int i[5]) {
+    double p = -1;
+    if (i[3] == 0) {
+      p = 4;
+    } else if (i[3] <= 9670.0) {
+      p = 4;
+    } else if (i[3] > 9670.0) {
+      p = 1;
+    } 
+    return p;
+  }
+  static double N59c93fd4424(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 3;
+    } else if (i[2] <= 9670.0) {
+      p = 3;
+    } else if (i[2] > 9670.0) {
+      p = 4;
+    } 
+    return p;
+  }
+  static double N2b7da559425(int i[5]) {
+    double p = -1;
+    if (i[3] == 0) {
+      p = 4;
+    } else if (i[3] <= 9670.0) {
+      p = 4;
+    } else if (i[3] > 9670.0) {
+    p = PoseDetector::N45f28c5d426(i);
+    } 
+    return p;
+  }
+  static double N45f28c5d426(int i[5]) {
+    double p = -1;
+    if (i[3] == 0) {
+      p = 4;
+    } else if (i[3] <= 10025.0) {
+    p = PoseDetector::N36dd518b427(i);
+    } else if (i[3] > 10025.0) {
+    p = PoseDetector::N2c3cbf54429(i);
+    } 
+    return p;
+  }
+  static double N36dd518b427(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 4;
+    } else if (i[2] <= 9795.0) {
+    p = PoseDetector::N7c1498d0428(i);
+    } else if (i[2] > 9795.0) {
+      p = 4;
+    } 
+    return p;
+  }
+  static double N7c1498d0428(int i[5]) {
+    double p = -1;
+    if (i[0] == 0) {
+      p = 1;
+    } else if (i[0] <= 10502.0) {
+      p = 1;
+    } else if (i[0] > 10502.0) {
+      p = 4;
+    } 
+    return p;
+  }
+  static double N2c3cbf54429(int i[5]) {
+    double p = -1;
+    if (i[3] == 0) {
+      p = 4;
+    } else if (i[3] <= 10208.0) {
+    p = PoseDetector::N48353a7c430(i);
+    } else if (i[3] > 10208.0) {
+      p = 1;
+    } 
+    return p;
+  }
+  static double N48353a7c430(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 4;
+    } else if (i[1] <= 6298.0) {
+      p = 4;
+    } else if (i[1] > 6298.0) {
+      p = 3;
+    } 
+    return p;
+  }
+  static double N1e92c7ed431(int i[5]) {
+    double p = -1;
+    if (i[3] == 0) {
+      p = 4;
+    } else if (i[3] <= 9570.0) {
+      p = 4;
+    } else if (i[3] > 9570.0) {
+    p = PoseDetector::N3683a849432(i);
+    } 
+    return p;
+  }
+  static double N3683a849432(int i[5]) {
+    double p = -1;
+    if (i[4] == 0) {
+      p = 3;
+    } else if (i[4] <= 10182.0) {
+    p = PoseDetector::N7d9d6c94433(i);
+    } else if (i[4] > 10182.0) {
+    p = PoseDetector::Naa9f0435(i);
+    } 
+    return p;
+  }
+  static double N7d9d6c94433(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 3;
+    } else if (i[2] <= 10314.0) {
+      p = 3;
+    } else if (i[2] > 10314.0) {
+    p = PoseDetector::N6a43a8f9434(i);
+    } 
+    return p;
+  }
+  static double N6a43a8f9434(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 3;
+    } else if (i[1] <= 6684.0) {
+      p = 3;
+    } else if (i[1] > 6684.0) {
+      p = 2;
+    } 
+    return p;
+  }
+  static double Naa9f0435(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 4;
+    } else if (i[2] <= 10261.0) {
+    p = PoseDetector::N3c1acb95436(i);
+    } else if (i[2] > 10261.0) {
+      p = 2;
+    } 
+    return p;
+  }
+  static double N3c1acb95436(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 4;
+    } else if (i[1] <= 6350.0) {
+      p = 4;
+    } else if (i[1] > 6350.0) {
+    p = PoseDetector::N32bc207437(i);
+    } 
+    return p;
+  }
+  static double N32bc207437(int i[5]) {
+    double p = -1;
+    if (i[4] == 0) {
+      p = 3;
+    } else if (i[4] <= 10261.0) {
+      p = 3;
+    } else if (i[4] > 10261.0) {
+      p = 4;
+    } 
+    return p;
+  }
+  static double N2dcf5b31438(int i[5]) {
+    double p = -1;
+    if (i[0] == 0) {
+      p = 0;
+    } else if (i[0] <= 9595.0) {
+    p = PoseDetector::N86c0576439(i);
+    } else if (i[0] > 9595.0) {
+    p = PoseDetector::N49f4507b460(i);
+    } 
+    return p;
+  }
+  static double N86c0576439(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 2;
+    } else if (i[2] <= 10833.0) {
+    p = PoseDetector::N6bda8a4b440(i);
+    } else if (i[2] > 10833.0) {
+    p = PoseDetector::N64f302ed442(i);
+    } 
+    return p;
+  }
+  static double N6bda8a4b440(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 2;
+    } else if (i[2] <= 10805.0) {
+      p = 2;
+    } else if (i[2] > 10805.0) {
+    p = PoseDetector::N58ad793e441(i);
+    } 
+    return p;
+  }
+  static double N58ad793e441(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 0;
+    } else if (i[1] <= 6524.0) {
+      p = 0;
+    } else if (i[1] > 6524.0) {
+      p = 2;
+    } 
+    return p;
+  }
+  static double N64f302ed442(int i[5]) {
+    double p = -1;
+    if (i[0] == 0) {
+      p = 0;
+    } else if (i[0] <= 9472.0) {
+      p = 0;
+    } else if (i[0] > 9472.0) {
+    p = PoseDetector::Ne454962443(i);
+    } 
+    return p;
+  }
+  static double Ne454962443(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 0;
+    } else if (i[1] <= 6506.0) {
+      p = 0;
+    } else if (i[1] > 6506.0) {
+    p = PoseDetector::N66d4c83f444(i);
+    } 
+    return p;
+  }
+  static double N66d4c83f444(int i[5]) {
+    double p = -1;
+    if (i[4] == 0) {
+      p = 2;
+    } else if (i[4] <= 10051.0) {
+    p = PoseDetector::N1ba6d4d7445(i);
+    } else if (i[4] > 10051.0) {
+    p = PoseDetector::N1a0ab441449(i);
+    } 
+    return p;
+  }
+  static double N1ba6d4d7445(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 2;
+    } else if (i[2] <= 11985.0) {
+    p = PoseDetector::N65df7d6f446(i);
+    } else if (i[2] > 11985.0) {
+      p = 0;
+    } 
+    return p;
+  }
+  static double N65df7d6f446(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 0;
+    } else if (i[1] <= 6595.0) {
+    p = PoseDetector::N33a436a9447(i);
+    } else if (i[1] > 6595.0) {
+      p = 2;
+    } 
+    return p;
+  }
+  static double N33a436a9447(int i[5]) {
+    double p = -1;
+    if (i[0] == 0) {
+      p = 0;
+    } else if (i[0] <= 9521.0) {
+      p = 0;
+    } else if (i[0] > 9521.0) {
+    p = PoseDetector::N6200abbb448(i);
+    } 
+    return p;
+  }
+  static double N6200abbb448(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 2;
+    } else if (i[1] <= 6577.0) {
+      p = 2;
+    } else if (i[1] > 6577.0) {
+      p = 0;
+    } 
+    return p;
+  }
+  static double N1a0ab441449(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 0;
+    } else if (i[2] <= 11648.0) {
+    p = PoseDetector::N34c024c2450(i);
+    } else if (i[2] > 11648.0) {
+      p = 0;
+    } 
+    return p;
+  }
+  static double N34c024c2450(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 2;
+    } else if (i[2] <= 11145.0) {
+    p = PoseDetector::N32ad579c451(i);
+    } else if (i[2] > 11145.0) {
+    p = PoseDetector::N329acd33454(i);
+    } 
+    return p;
+  }
+  static double N32ad579c451(int i[5]) {
+    double p = -1;
+    if (i[0] == 0) {
+      p = 0;
+    } else if (i[0] <= 9496.0) {
+      p = 0;
+    } else if (i[0] > 9496.0) {
+    p = PoseDetector::N1252dcc2452(i);
+    } 
+    return p;
+  }
+  static double N1252dcc2452(int i[5]) {
+    double p = -1;
+    if (i[3] == 0) {
+      p = 2;
+    } else if (i[3] <= 10051.0) {
+      p = 2;
+    } else if (i[3] > 10051.0) {
+    p = PoseDetector::N7e1b4df3453(i);
+    } 
+    return p;
+  }
+  static double N7e1b4df3453(int i[5]) {
+    double p = -1;
+    if (i[0] == 0) {
+      p = 0;
+    } else if (i[0] <= 9570.0) {
+      p = 0;
+    } else if (i[0] > 9570.0) {
+      p = 2;
+    } 
+    return p;
+  }
+  static double N329acd33454(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 0;
+    } else if (i[1] <= 6720.0) {
+    p = PoseDetector::N5115e939455(i);
+    } else if (i[1] > 6720.0) {
+    p = PoseDetector::N4948c70e458(i);
+    } 
+    return p;
+  }
+  static double N5115e939455(int i[5]) {
+    double p = -1;
+    if (i[3] == 0) {
+      p = 0;
+    } else if (i[3] <= 10103.0) {
+      p = 0;
+    } else if (i[3] > 10103.0) {
+    p = PoseDetector::N7582c6c5456(i);
+    } 
+    return p;
+  }
+  static double N7582c6c5456(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 0;
+    } else if (i[1] <= 6613.0) {
+    p = PoseDetector::N5cc7ebc8457(i);
+    } else if (i[1] > 6613.0) {
+      p = 0;
+    } 
+    return p;
+  }
+  static double N5cc7ebc8457(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 0;
+    } else if (i[1] <= 6559.0) {
+      p = 0;
+    } else if (i[1] > 6559.0) {
+      p = 2;
+    } 
+    return p;
+  }
+  static double N4948c70e458(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 0;
+    } else if (i[2] <= 11232.0) {
+      p = 0;
+    } else if (i[2] > 11232.0) {
+    p = PoseDetector::N49048db8459(i);
+    } 
+    return p;
+  }
+  static double N49048db8459(int i[5]) {
+    double p = -1;
+    if (i[3] == 0) {
+      p = 0;
+    } else if (i[3] <= 9670.0) {
+      p = 0;
+    } else if (i[3] > 9670.0) {
+      p = 2;
+    } 
+    return p;
+  }
+  static double N49f4507b460(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 0;
+    } else if (i[1] <= 6419.0) {
+    p = PoseDetector::N46cfe12b461(i);
+    } else if (i[1] > 6419.0) {
+    p = PoseDetector::N7977a7fa468(i);
+    } 
+    return p;
+  }
+  static double N46cfe12b461(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 3;
+    } else if (i[2] <= 10721.0) {
+    p = PoseDetector::N79c7f25e462(i);
+    } else if (i[2] > 10721.0) {
+    p = PoseDetector::N35f937c8463(i);
+    } 
+    return p;
+  }
+  static double N79c7f25e462(int i[5]) {
+    double p = -1;
+    if (i[3] == 0) {
+      p = 3;
+    } else if (i[3] <= 9820.0) {
+      p = 3;
+    } else if (i[3] > 9820.0) {
+      p = 1;
+    } 
+    return p;
+  }
+  static double N35f937c8463(int i[5]) {
+    double p = -1;
+    if (i[0] == 0) {
+      p = 0;
+    } else if (i[0] <= 10000.0) {
+    p = PoseDetector::N7cbd4726464(i);
+    } else if (i[0] > 10000.0) {
+    p = PoseDetector::N3a7b058e466(i);
+    } 
+    return p;
+  }
+  static double N7cbd4726464(int i[5]) {
+    double p = -1;
+    if (i[4] == 0) {
+      p = 0;
+    } else if (i[4] <= 9846.0) {
+    p = PoseDetector::N6e8a4fc4465(i);
+    } else if (i[4] > 9846.0) {
+      p = 0;
+    } 
+    return p;
+  }
+  static double N6e8a4fc4465(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 0;
+    } else if (i[1] <= 6332.0) {
+      p = 0;
+    } else if (i[1] > 6332.0) {
+      p = 2;
+    } 
+    return p;
+  }
+  static double N3a7b058e466(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 0;
+    } else if (i[1] <= 6384.0) {
+      p = 0;
+    } else if (i[1] > 6384.0) {
+    p = PoseDetector::N62a9cba0467(i);
+    } 
+    return p;
+  }
+  static double N62a9cba0467(int i[5]) {
+    double p = -1;
+    if (i[3] == 0) {
+      p = 2;
+    } else if (i[3] <= 10234.0) {
+      p = 2;
+    } else if (i[3] > 10234.0) {
+      p = 0;
+    } 
+    return p;
+  }
+  static double N7977a7fa468(int i[5]) {
+    double p = -1;
+    if (i[4] == 0) {
+      p = 2;
+    } else if (i[4] <= 10557.0) {
+    p = PoseDetector::N1eb54c63469(i);
+    } else if (i[4] > 10557.0) {
+      p = 0;
+    } 
+    return p;
+  }
+  static double N1eb54c63469(int i[5]) {
+    double p = -1;
+    if (i[0] == 0) {
+      p = 2;
+    } else if (i[0] <= 9795.0) {
+    p = PoseDetector::N10aa0755470(i);
+    } else if (i[0] > 9795.0) {
+      p = 2;
+    } 
+    return p;
+  }
+  static double N10aa0755470(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 2;
+    } else if (i[2] <= 11800.0) {
+    p = PoseDetector::Nac765ff471(i);
+    } else if (i[2] > 11800.0) {
+    p = PoseDetector::N4da002eb486(i);
+    } 
+    return p;
+  }
+  static double Nac765ff471(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 2;
+    } else if (i[1] <= 6648.0) {
+    p = PoseDetector::N28f94de0472(i);
+    } else if (i[1] > 6648.0) {
+      p = 2;
+    } 
+    return p;
+  }
+  static double N28f94de0472(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 0;
+    } else if (i[1] <= 6489.0) {
+    p = PoseDetector::N767c224473(i);
+    } else if (i[1] > 6489.0) {
+    p = PoseDetector::N4ab83276476(i);
+    } 
+    return p;
+  }
+  static double N767c224473(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 2;
+    } else if (i[2] <= 11379.0) {
+      p = 2;
+    } else if (i[2] > 11379.0) {
+    p = PoseDetector::N2cfacd48474(i);
+    } 
+    return p;
+  }
+  static double N2cfacd48474(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 0;
+    } else if (i[1] <= 6471.0) {
+      p = 0;
+    } else if (i[1] > 6471.0) {
+    p = PoseDetector::N5bb490a475(i);
+    } 
+    return p;
+  }
+  static double N5bb490a475(int i[5]) {
+    double p = -1;
+    if (i[4] == 0) {
+      p = 2;
+    } else if (i[4] <= 10129.0) {
+      p = 2;
+    } else if (i[4] > 10129.0) {
+      p = 0;
+    } 
+    return p;
+  }
+  static double N4ab83276476(int i[5]) {
+    double p = -1;
+    if (i[4] == 0) {
+      p = 2;
+    } else if (i[4] <= 10129.0) {
+      p = 2;
+    } else if (i[4] > 10129.0) {
+    p = PoseDetector::N2f9074d477(i);
+    } 
+    return p;
+  }
+  static double N2f9074d477(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 2;
+    } else if (i[2] <= 11379.0) {
+    p = PoseDetector::N2b4e51c1478(i);
+    } else if (i[2] > 11379.0) {
+    p = PoseDetector::N7b39e881483(i);
+    } 
+    return p;
+  }
+  static double N2b4e51c1478(int i[5]) {
+    double p = -1;
+    if (i[0] == 0) {
+      p = 2;
+    } else if (i[0] <= 9670.0) {
+      p = 2;
+    } else if (i[0] > 9670.0) {
+    p = PoseDetector::N22d96c1d479(i);
+    } 
+    return p;
+  }
+  static double N22d96c1d479(int i[5]) {
+    double p = -1;
+    if (i[4] == 0) {
+      p = 2;
+    } else if (i[4] <= 10448.0) {
+    p = PoseDetector::N7048f5ca480(i);
+    } else if (i[4] > 10448.0) {
+      p = 0;
+    } 
+    return p;
+  }
+  static double N7048f5ca480(int i[5]) {
+    double p = -1;
+    if (i[0] == 0) {
+      p = 2;
+    } else if (i[0] <= 9770.0) {
+    p = PoseDetector::N4600da5d481(i);
+    } else if (i[0] > 9770.0) {
+      p = 2;
+    } 
+    return p;
+  }
+  static double N4600da5d481(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 2;
+    } else if (i[1] <= 6613.0) {
+      p = 2;
+    } else if (i[1] > 6613.0) {
+    p = PoseDetector::N62003392482(i);
+    } 
+    return p;
+  }
+  static double N62003392482(int i[5]) {
+    double p = -1;
+    if (i[2] == 0) {
+      p = 2;
+    } else if (i[2] <= 11174.0) {
+      p = 2;
+    } else if (i[2] > 11174.0) {
+      p = 0;
+    } 
+    return p;
+  }
+  static double N7b39e881483(int i[5]) {
+    double p = -1;
+    if (i[0] == 0) {
+      p = 0;
+    } else if (i[0] <= 9695.0) {
+    p = PoseDetector::N16cfac5b484(i);
+    } else if (i[0] > 9695.0) {
+      p = 2;
+    } 
+    return p;
+  }
+  static double N16cfac5b484(int i[5]) {
+    double p = -1;
+    if (i[1] == 0) {
+      p = 0;
+    } else if (i[1] <= 6577.0) {
+      p = 0;
+    } else if (i[1] > 6577.0) {
+    p = PoseDetector::N1c3c9610485(i);
+    } 
+    return p;
+  }
+  static double N1c3c9610485(int i[5]) {
+    double p = -1;
+    if (i[4] == 0) {
+      p = 2;
+    } else if (i[4] <= 10261.0) {
+      p = 2;
+    } else if (i[4] > 10261.0) {
+      p = 0;
+    } 
+    return p;
+  }
+  static double N4da002eb486(int i[5]) {
+    double p = -1;
+    if (i[4] == 0) {
+      p = 2;
+    } else if (i[4] <= 10000.0) {
+      p = 2;
+    } else if (i[4] > 10000.0) {
+      p = 0;
+    } 
+    return p;
+  }
 };
 }
