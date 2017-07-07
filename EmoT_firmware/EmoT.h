@@ -4,14 +4,12 @@
 namespace m2d {
 	#define kVoltage 3.3
 	#define PIN 13
-	#define SLAVE_PIN 53
 	#define N_LEDS 256
 
 	class EmoT
 	{
 		private:
 		Adafruit_NeoPixel strip;
-		Adafruit_NeoPixel slave;
 		int sensorValues[5] = { 0 };
 		public:
 		enum SensorPosition {
@@ -61,8 +59,8 @@ namespace m2d {
 		}
 
 		void draw(unsigned char img[16][16][3], bool flip = false) {
-			if (this->currentImageAddr != **img) {
-				this->currentImageAddr = **img;
+			if (this->currentImageAddr != &(img[0][0][0])) {
+				this->currentImageAddr = &(img[0][0][0]);
 				if (flip) {
 					for (int time = 0; time <= 32; time++) {
 						for (int i = 16 * 16; i >= 0; i--) {
@@ -76,10 +74,8 @@ namespace m2d {
 								pos = (row + 1) * 16 - idx - 1;
 							}
 							this->strip.setPixelColor(pos, c);
-							this->slave.setPixelColor(pos, c);
 						}
 						this->strip.show();
-						this->slave.show();
 					}
 				}
 			 	else {
@@ -95,20 +91,17 @@ namespace m2d {
 								pos = (row + 1) * 16 - idx - 1;
 							}
 							this->strip.setPixelColor(pos, c);
-							this->slave.setPixelColor(pos, c);
 						}
 						this->strip.show();
-						this->slave.show();
 			 		}
 				}
 			}
 		}
 
 		void clear() {
+			this->currentImageAddr = nullptr;
 			this->strip.clear();
 			this->strip.show();
-			this->slave.clear();
-			this->slave.show();
 		}
 
 		private:
@@ -117,10 +110,6 @@ namespace m2d {
 			this->strip = Adafruit_NeoPixel(N_LEDS, PIN, NEO_GRB + NEO_KHZ800);
 			this->strip.begin();
 			this->strip.setBrightness(30);
-
-			this->slave = Adafruit_NeoPixel(N_LEDS, SLAVE_PIN, NEO_GRB + NEO_KHZ800);
-			this->slave.begin();
-			this->slave.setBrightness(90);
 		}
 	};
 }

@@ -82,8 +82,8 @@ namespace m2d {
 						this->slave.show();
 					}
 				}
-			 	else {
-			 		for (int time = 0; time <= 32; time++) {
+				else {
+					for (int time = 0; time <= 32; time++) {
 						for (int i = 0; i < 16 * 16; i++) {
 							int row = i / 16;
 							int idx = i % 16;
@@ -99,7 +99,7 @@ namespace m2d {
 						}
 						this->strip.show();
 						this->slave.show();
-			 		}
+					}
 				}
 			}
 		}
