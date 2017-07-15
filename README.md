@@ -44,7 +44,8 @@
 - 肩 * 2個
 - 胸 * 2個
 - 背中 * 1個
-`asset/sensor_suit`以下の詳細は写真参考。
+
+詳細は`asset/sensor_suit`以下の写真参考。
 
 ## その他
 - `EmoT_LED_Test`と`EmoT_SensorTest`はLEDマトリクスやセンサの動作確認用。
