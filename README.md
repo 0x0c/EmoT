@@ -1,5 +1,7 @@
 # EmoT
 
+![](https://github.com/0x0c/EmoT/raw/master/asset/photo/img.JPG)
+
 ## Requirements
 
 - [Arduino Due](https://store.arduino.cc/usa/arduino-due)
