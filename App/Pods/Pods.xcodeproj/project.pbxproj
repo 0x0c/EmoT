@@ -1,0 +1,1619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0298CF80907804E18C783EE18AF42CE9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFA306074F30BF92176442AE990945E /* QuartzCore.framework */; };
+		02EB151A619CA295B2CB0C2E108181F8 /* CBPeripheral+Konashi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B43E60029BD1A60D3E63A5804D58194 /* CBPeripheral+Konashi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CBCB4878BB9115284C233482102BC1C /* Pods-KonashiInspector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2896D2157B03C8D76BA25D828216719 /* Pods-KonashiInspector-dummy.m */; };
+		0E40000204CD27B724326C573C0DC7AA /* konashi-ios-sdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C67E6254F9BE984224D672003A255F6B /* konashi-ios-sdk-dummy.m */; };
+		149990BE6403629343DA5BF7BB744EF6 /* Konashi+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 2888E3CFCD58D4782856D479EBD04E80 /* Konashi+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14C78FCD4DA363A08231F3A9A3FD5C41 /* KNSPeripheralImpls.h in Headers */ = {isa = PBXBuildFile; fileRef = B91F075A1E584DAF5089B95C8DC3E30D /* KNSPeripheralImpls.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1509F5C261C8D5C35E7C0EF1D92FE0B8 /* SWTableViewCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D144D291FEFA0C7DCADD3B5217409B67 /* SWTableViewCell-dummy.m */; };
+		1CB00D64156979AB66F5F1B1710D763C /* CBService+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D683BEDD8D0EB11352E2F2771F9DA65 /* CBService+Konashi.m */; };
+		1E06874A3D057A64E4726549E7BE3E70 /* KonashiJavaScriptBindingsProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2E19A273297FBB122E054B7B84AFCE /* KonashiJavaScriptBindingsProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F1590D75F94FD124DFD3884822FEB23 /* Konashi+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D726FEF8721B7CDC76B0A8B6DF134A /* Konashi+ADC.m */; };
+		22CD587008153C4985E57ED66D7AE0F6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFA306074F30BF92176442AE990945E /* QuartzCore.framework */; };
+		24F96846664E55BE5F82886EDB921DB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ABFAC3833BB2B52218B1D0FCC280DD /* UIKit.framework */; };
+		27CB6DD47FF4777C385574BD25532792 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D1CA82D9D539708AC389805FFF3B0C61 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2808CE8B004C9525DA03F907915B9F32 /* M2DWebViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CC1573A58E61884E08A2D888203934 /* M2DWebViewController-dummy.m */; };
+		35E23CE369CF3C3E4B3E7EF25D3266B6 /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B67B482B0FB590BB1D09E2E2BFDD0 /* SWUtilityButtonView.m */; };
+		3EA8D54F129BDA1ECE0D9DCD7632B55E /* CBService+Konashi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B1359523E9C38D076E7B68206862176 /* CBService+Konashi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EFE28B8D161D76805E2BCC2018C53D7 /* SWUtilityButtonView.h in Headers */ = {isa = PBXBuildFile; fileRef = F2884DC907EE40C53231F2113081DA48 /* SWUtilityButtonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F90B4A3138EED8DFD4A08123F541519 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BE51C942F66D26763DF345CA8AE882 /* SVProgressHUD.m */; };
+		3F9A51882FCC1347F159973970390436 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D2C6C59EA405EA2CCE5018A7695337 /* Foundation.framework */; };
+		443CCE401CCB360E15825DD795AE1167 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7D88437D95F8A8E9F2877D2F266592 /* FAKFoundationIcons.m */; };
+		49CE7D314D2FC4902888B6C54C897148 /* Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 6196016E400FE65662E312DFB7A3E2A6 /* Konashi.m */; };
+		49DB563D52FC3536B178BEAC8C5CA76D /* KNSHandlerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A8A5FA4AC86E5C656B0D265BAACB8A /* KNSHandlerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49F5DAA52733A8FB0A955AA67DD73434 /* JDStatusBarStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 45294366A649EF89D5E99EE7194B44B6 /* JDStatusBarStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C6BC94852D77D0B94CF82A5F8E009D2 /* SWLongPressGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = EC14E92D032EEF44C77A40B57FAA9E98 /* SWLongPressGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E1DE010FE99B34D78E0A1D266D11F90 /* KNSKoshianPeripheralImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4C28AD1D3C3FF2888D34730F77490E /* KNSKoshianPeripheralImpl.m */; };
+		56966FC105E43D7CD79633884121368D /* SWUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A36739EA3D22ED61FA456F38D338A062 /* SWUtilityButtonTapGestureRecognizer.m */; };
+		57A2DA199D9658CB927E9DE020459B32 /* CBUUID+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE4356C70EB60BF952E06DA71A3137E /* CBUUID+Konashi.m */; };
+		57C8B45467C7C218E73E27EA960EC35D /* KonashiConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 82611763015371974CD1F65B32645B61 /* KonashiConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		580F3A708B2DBD20C3BA0A3DB8900DE8 /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3AB83C39154961048D9116FAED5360 /* FAKZocial.m */; };
+		5AE072F2C681FA84825278AFC8D84DA4 /* Konashi+JavaScriptBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 136B89A56428ACA5C03E97C744FFB8AE /* Konashi+JavaScriptBindings.m */; };
+		5BDFED50D5AD144CA068E29508992BAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D2C6C59EA405EA2CCE5018A7695337 /* Foundation.framework */; };
+		5E1C4E650ED0762D5C93ADE6256A99A6 /* JDStatusBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = B8A2981FB64AA7844AE7F7A995ADA64C /* JDStatusBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FB956B31DF117839DA0E00F87C0FF4E /* FAKFontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = 4479D8FFCAD2ED821EB42454FE2D8B98 /* FAKFontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		635E7C50994D03908773F7B0B002FA36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D2C6C59EA405EA2CCE5018A7695337 /* Foundation.framework */; };
+		6378262FF291F8F36830CBD4D00BAF0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D2C6C59EA405EA2CCE5018A7695337 /* Foundation.framework */; };
+		63E3264FB0473162AB30CC1BFD445CC8 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB2022A189AE4E0C290F90AEB12AA0F /* NSMutableArray+SWUtilityButtons.m */; };
+		65242D4EAC695FA8B62601D9A799E517 /* Konashi+Grove.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF213C0947797E5432211B3448C3364 /* Konashi+Grove.m */; };
+		69647AF94E8681E30BF63362C3B5193F /* M2DWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E7F2B91BDFFF31DD9A142648C4D43C /* M2DWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E63F32C68459E921882C6AEA40A2B2A /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 135246FC7360D5B568A8EE857E74CF3A /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7402B14FDB278119E857A83BCBB663B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D2C6C59EA405EA2CCE5018A7695337 /* Foundation.framework */; };
+		7536DE2FD677ED97EC83F183FF503826 /* KNSKoshianPeripheralImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = EB01CEE0EB05A4B3B40C69DA76EE2EE3 /* KNSKoshianPeripheralImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76FD290365CA99E78F7E9388921EFB09 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527417E10E1D6783308705D7B61F1A7F /* CoreBluetooth.framework */; };
+		775374250D4D2FF84A1AC3213179E9CB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7309970C6C106FAE2926EE8F8041C9 /* WebKit.framework */; };
+		782B8070C9BA0510D06275E647A07A01 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B11CC30271AD82CB3C23705D79697DF /* JavaScriptCore.framework */; };
+		7928B1B9D5CB94A2EF7EBEE9A0B45866 /* KNSPeripheral.h in Headers */ = {isa = PBXBuildFile; fileRef = 22AD8EECD1E06150E4B388D326C18DC0 /* KNSPeripheral.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AAA9A4698E5795BFB35C28E686BA3FB /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEEA62C542E214BA5F033E182CDA6C3 /* SVProgressHUD-dummy.m */; };
+		7E915D7ECD7D753EFE0770D91E00DF51 /* Konashi+ACDrive.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E9C5CAAEA6C7147C1822C9525B2AD90 /* Konashi+ACDrive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87EAD6E2EE5C9F0B8FD227FD63E7A430 /* FAKIonIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F9AF230F376F5595D375845221DF73 /* FAKIonIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8997AA517D998EAE0D243F8C3F791850 /* Konashi+Grove.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A879BEACDBE2CEA33B2D56672C0DE0 /* Konashi+Grove.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A6287B963D51F439C0EBE2D50F9391E /* FAKZocial.h in Headers */ = {isa = PBXBuildFile; fileRef = 44FCB377C47D64593C7D50E88520A9DD /* FAKZocial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BEC2E7D520398C05BA1D7DC9F3035DD /* KNSPeripheralBaseImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 40764ECCF7BE1850C73E805EDDB445E7 /* KNSPeripheralBaseImpl.m */; };
+		A88D02610334A36200A1B03A85FA8A5C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5030757A684607339EB0C93434AF0C /* CoreText.framework */; };
+		A8A44ED2986BB942E9A59698546C8EC8 /* KNSPeripheralImplProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E59EA5D474B2EF769CDDDE815CDDF92D /* KNSPeripheralImplProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9CD5716FE4D49CFFD134BCF8A7DBFFE /* M2DWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F808E3DC7641931429B56C4682685CC6 /* M2DWebViewController.m */; };
+		AEBD720A1A0309645BE19090E565C69B /* KNSCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BBD88CCC81DDB3B73DAC9C9DD6E8A4 /* KNSCentralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5238D3EC13327E9DE26D78ED3D81F82 /* KNSKonashiPeripheralImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCA0EB76805B72CFB3D02DEAEA5CC2 /* KNSKonashiPeripheralImpl.m */; };
+		B542A6FB6853BDDD6AB9AFB544D71626 /* AMViralSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A11EB51D6DC52946237B35B2D5A31F /* AMViralSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B54C0DD543F76B21AA00414CF661DACC /* KonashiUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D6D00286AD6C4E289D28ACCD90509D88 /* KonashiUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5B4D4BA97D510630C1ED9E303FCC2CA /* KNSKonashiPeripheralImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EE3A865F49FD7E3CEE264D1D9AA6E72 /* KNSKonashiPeripheralImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB391F13C5E6C2A682CC399E6651BADD /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 937D7DC83C5A53BA06EF6BE8DCEA2E25 /* SVIndefiniteAnimatedView.m */; };
+		BE7130D8FD0EB939645C878B41B5B097 /* Konashi+ACDrive.m in Sources */ = {isa = PBXBuildFile; fileRef = 44836506C573184BE11686E80BC3A496 /* Konashi+ACDrive.m */; };
+		C00D5A278B5D2A008B1728F543C69C98 /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D2B0EC1F69B5155D691D57C3CF3070 /* JDStatusBarNotification.m */; };
+		C2B78F3B472218E706ACBAE8DDA16A4F /* SWTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6DBCAC2439EFE534F40A549AF8B905 /* SWTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C306FE35882E2AD122C01A463B211241 /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3696D0ABDA327AD28B9BB844C292FC /* SWCellScrollView.m */; };
+		C833621867A7310207E7984045FB907C /* KNSHandlerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C851206836A47BFA601B7CCAA878971 /* KNSHandlerManager.m */; };
+		CAC420AB4B06A052F4C5766377FB1629 /* SWCellScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = DA98FEDEB20CD4E63BA4186C2C3F4626 /* SWCellScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDCC5F8C49D18065CE3610E7E8884FD5 /* FontAwesomeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7780818E8A00ECA0D04EB4DE364BB26 /* FontAwesomeKit-dummy.m */; };
+		CDF5926C584586000AFB8DBB2C10D531 /* KNSCentralManager+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 11797E173EDB058D9DA1800D4DAB163D /* KNSCentralManager+UI.m */; };
+		CE300D07AC8D7099FDBD9FC389877F48 /* KNSCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E41D291A37753EE93E856A17E95FB /* KNSCentralManager.m */; };
+		D0FDD1949CF52FC9732E3B9DB9ADABEF /* NSMutableArray+SWUtilityButtons.h in Headers */ = {isa = PBXBuildFile; fileRef = FBEC924D473FB908592175671E2F59A5 /* NSMutableArray+SWUtilityButtons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D15550CF5996F31B47EA5A1E33F007D9 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2486879D033787B0127334FF065CB /* FAKFontAwesome.m */; };
+		D214D2508C4AF3D723C2ED25D64E9CA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D2C6C59EA405EA2CCE5018A7695337 /* Foundation.framework */; };
+		D2215FC19313820B68E353EF0EEF59AD /* CBUUID+Konashi.h in Headers */ = {isa = PBXBuildFile; fileRef = BE3A40E8B6F9C8FC9BEB493740B10572 /* CBUUID+Konashi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D28840F9840407357317E1269C98260A /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC0F919072B56A1C4736716EE3A6DC /* SWTableViewCell.m */; };
+		D7390C0191BA392A61715913C6B3AEDD /* KNSPeripheralBaseImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9AFC5ED73C9D427EDEB5EC69C521FE /* KNSPeripheralBaseImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD06D9704BE9CD4B6250E1E599DD81BE /* KNSCentralManager+UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F5EC2D1D2B3DA4824AC356A8D6AD1FF /* KNSCentralManager+UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E04BFD7AD8027BCC3B8D030AFBE8DA8E /* Konashi.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF60DB9027B9510E235F119BBDA865E /* Konashi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0E29147B7D8EC40D1A4F94C2C086B68 /* FAKFoundationIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 0004FD67B4E3A916610AD5EF4EE722AD /* FAKFoundationIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0ECBF04500922E27B4088D73C972979 /* KNSPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C70890559311A9752C4A3A65E96C2BA /* KNSPeripheral.m */; };
+		E45D43D1BF2CAAA81D456D87229EE391 /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DBA35B58B1552E5849A607D3D71A8F /* SWLongPressGestureRecognizer.m */; };
+		E822F1FCC14F80B9DF7E8A87BAAAB8C5 /* KonashiUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 314732989AEAC7E45298DF0B8E2C243C /* KonashiUtils.m */; };
+		E96BE867425427EC8B82931C5AF409ED /* JDStatusBarNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA7461D32B4F706E3021622DA81C660 /* JDStatusBarNotification-dummy.m */; };
+		EC32F90214F34DDD0E6E1E024FBF431A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D2C6C59EA405EA2CCE5018A7695337 /* Foundation.framework */; };
+		ED24E92650F6911E4C99D7A98498551A /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DE308239E1E6BE514B7FFC03D1CCAE /* JDStatusBarStyle.m */; };
+		EE025E7D14FC8FA827C591D0B634B70A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D2C6C59EA405EA2CCE5018A7695337 /* Foundation.framework */; };
+		EF6C07E4D743B8645C9C76E51A02C9BD /* AMViralSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C05B24F6A89B99837AACA31A13B73A /* AMViralSwitch.m */; };
+		EF7DB5ADABC12C3AA68887BDDF56DEFC /* SWUtilityButtonTapGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DA5C920F7E15CC5DA70D449DB0853A /* SWUtilityButtonTapGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F26E3AEA57EB195BC61C92DC57E14053 /* JDStatusBarNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 26A45A700999A00BFF054634E216A1B5 /* JDStatusBarNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3CAAA253E2293EE587412503D8934CA /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B3A46C45A7A3317930E495125D12C4 /* FAKIcon.m */; };
+		F4BFD7B535692DDF63649BD29FAC9D5E /* Konashi+JavaScriptBindings.h in Headers */ = {isa = PBXBuildFile; fileRef = B0AAF38095B7B950DA34D69DC300D564 /* Konashi+JavaScriptBindings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4FA150B34A76E334EA6E07F1C22AAD6 /* FontAwesomeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8299F060E3AC0AB11670AFECF44D6F6E /* FontAwesomeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5E0C579E931083BF3EFDCC9CD88C970 /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A62AA8C98F91A1FF48E896ED7AEDD3 /* JDStatusBarView.m */; };
+		F6400467481E4FC5022B938DEE53DED7 /* CBPeripheral+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D7E9F88168ED882E6D7A2EF0E2E31A /* CBPeripheral+Konashi.m */; };
+		F7838FE38A1C1B15A8BDC04ED4E82B7F /* AMViralSwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B7FDE4AE52AF390D2F5A7DAF99F741 /* AMViralSwitch-dummy.m */; };
+		F89880759BAB2E38B268F456CECDA73B /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 533CBF9B287257BEAA94B1E698D8CD4E /* FAKIonIcons.m */; };
+		FBF89427609542D56EC6215DD09F9F64 /* FAKIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = EE1A34A5B4490ADC031C5B84DB205CA1 /* FAKIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B84DC7FCC9FF25320A5B44BF8DA7D73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98187D50CB3823FA6598BF0449EC2AB0;
+			remoteInfo = AMViralSwitch;
+		};
+		333E4A8594D492540C7248189E57FD7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF5CFD6F2B044B2583AE363E38A9D0EF;
+			remoteInfo = JDStatusBarNotification;
+		};
+		603621758A70993E23EE573D884EB006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9F1B3A3281633797F27632DF12DBFC6;
+			remoteInfo = FontAwesomeKit;
+		};
+		7DFC7E33B4125CFFC61EC5EC939E3FE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E40788C72F4564C8E5A67E055B8465F;
+			remoteInfo = M2DWebViewController;
+		};
+		91443BD906404DF51F550272FB87BA94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62A9DDE9144C6890BC6D571EBEBC5BC9;
+			remoteInfo = SWTableViewCell;
+		};
+		9AE5752D1D823EC4510E01F7CAA67EC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 462C99638B38CDAAF9699F8AFC1B9966;
+			remoteInfo = SVProgressHUD;
+		};
+		D535EF9709B336448A7436AC831689D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDCEC26E7C1C01111754F3897BAA1558;
+			remoteInfo = "konashi-ios-sdk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0004FD67B4E3A916610AD5EF4EE722AD /* FAKFoundationIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKFoundationIcons.h; path = FontAwesomeKit/FAKFoundationIcons.h; sourceTree = "<group>"; };
+		00ABFAC3833BB2B52218B1D0FCC280DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0A5B67B482B0FB590BB1D09E2E2BFDD0 /* SWUtilityButtonView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWUtilityButtonView.m; path = SWTableViewCell/PodFiles/SWUtilityButtonView.m; sourceTree = "<group>"; };
+		0B1359523E9C38D076E7B68206862176 /* CBService+Konashi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CBService+Konashi.h"; path = "Konashi/Konashi/Category/CoreBluetooth/CBService+Konashi.h"; sourceTree = "<group>"; };
+		0B43E60029BD1A60D3E63A5804D58194 /* CBPeripheral+Konashi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CBPeripheral+Konashi.h"; path = "Konashi/Konashi/Category/CoreBluetooth/CBPeripheral+Konashi.h"; sourceTree = "<group>"; };
+		0E9C5CAAEA6C7147C1822C9525B2AD90 /* Konashi+ACDrive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Konashi+ACDrive.h"; path = "Konashi/Konashi/Category/Konashi/Konashi+ACDrive.h"; sourceTree = "<group>"; };
+		0F2E19A273297FBB122E054B7B84AFCE /* KonashiJavaScriptBindingsProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KonashiJavaScriptBindingsProtocol.h; path = Konashi/Konashi/Category/Konashi/KonashiJavaScriptBindingsProtocol.h; sourceTree = "<group>"; };
+		11797E173EDB058D9DA1800D4DAB163D /* KNSCentralManager+UI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "KNSCentralManager+UI.m"; path = "Konashi/Konashi/Category/Konashi/KNSCentralManager+UI.m"; sourceTree = "<group>"; };
+		12BE51C942F66D26763DF345CA8AE882 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		135246FC7360D5B568A8EE857E74CF3A /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		136B89A56428ACA5C03E97C744FFB8AE /* Konashi+JavaScriptBindings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Konashi+JavaScriptBindings.m"; path = "Konashi/Konashi/Category/Konashi/Konashi+JavaScriptBindings.m"; sourceTree = "<group>"; };
+		16C5A26AE045ACD6DC3672741161EA28 /* libPods-KonashiInspector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KonashiInspector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C469EDACB281DC1EFF33E8E52E567F /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "zocial-regular-webfont.ttf"; path = "FontAwesomeKit/zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
+		181C0F2E6A30CC9601FBFD3711EC9C75 /* libM2DWebViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libM2DWebViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F9AF230F376F5595D375845221DF73 /* FAKIonIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKIonIcons.h; path = FontAwesomeKit/FAKIonIcons.h; sourceTree = "<group>"; };
+		1C5B3252CFA759D1E7A61586F99CD59C /* AMViralSwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMViralSwitch.xcconfig; sourceTree = "<group>"; };
+		22A62AA8C98F91A1FF48E896ED7AEDD3 /* JDStatusBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarView.m; path = JDStatusBarNotification/JDStatusBarView.m; sourceTree = "<group>"; };
+		22AD8EECD1E06150E4B388D326C18DC0 /* KNSPeripheral.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KNSPeripheral.h; path = Konashi/Konashi/KNSPeripheral.h; sourceTree = "<group>"; };
+		22D726FEF8721B7CDC76B0A8B6DF134A /* Konashi+ADC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Konashi+ADC.m"; path = "Konashi/Konashi/Category/Konashi/Konashi+ADC.m"; sourceTree = "<group>"; };
+		26A45A700999A00BFF054634E216A1B5 /* JDStatusBarNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarNotification.h; path = JDStatusBarNotification/JDStatusBarNotification.h; sourceTree = "<group>"; };
+		2888E3CFCD58D4782856D479EBD04E80 /* Konashi+ADC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Konashi+ADC.h"; path = "Konashi/Konashi/Category/Konashi/Konashi+ADC.h"; sourceTree = "<group>"; };
+		2CAC4A325D2158C5E337EA440AA9D96A /* Pods-KonashiInspector-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KonashiInspector-frameworks.sh"; sourceTree = "<group>"; };
+		2EE5AEA28B9ED8EC3746C6069038066A /* FontAwesomeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesomeKit.xcconfig; sourceTree = "<group>"; };
+		314732989AEAC7E45298DF0B8E2C243C /* KonashiUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KonashiUtils.m; path = Konashi/Konashi/KonashiUtils.m; sourceTree = "<group>"; };
+		32DBA35B58B1552E5849A607D3D71A8F /* SWLongPressGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWLongPressGestureRecognizer.m; path = SWTableViewCell/PodFiles/SWLongPressGestureRecognizer.m; sourceTree = "<group>"; };
+		33A8A5FA4AC86E5C656B0D265BAACB8A /* KNSHandlerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KNSHandlerManager.h; path = Konashi/Konashi/KNSHandlerManager.h; sourceTree = "<group>"; };
+		385E36A4A7935CAB4F1EDEE3ADF9B82C /* SWTableViewCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWTableViewCell-prefix.pch"; sourceTree = "<group>"; };
+		3AB2022A189AE4E0C290F90AEB12AA0F /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+SWUtilityButtons.m"; path = "SWTableViewCell/PodFiles/NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
+		3ACCA0EB76805B72CFB3D02DEAEA5CC2 /* KNSKonashiPeripheralImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KNSKonashiPeripheralImpl.m; path = Konashi/Konashi/Impl/KNSKonashiPeripheralImpl.m; sourceTree = "<group>"; };
+		3C851206836A47BFA601B7CCAA878971 /* KNSHandlerManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KNSHandlerManager.m; path = Konashi/Konashi/KNSHandlerManager.m; sourceTree = "<group>"; };
+		40764ECCF7BE1850C73E805EDDB445E7 /* KNSPeripheralBaseImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KNSPeripheralBaseImpl.m; path = Konashi/Konashi/Impl/KNSPeripheralBaseImpl.m; sourceTree = "<group>"; };
+		4479D8FFCAD2ED821EB42454FE2D8B98 /* FAKFontAwesome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKFontAwesome.h; path = FontAwesomeKit/FAKFontAwesome.h; sourceTree = "<group>"; };
+		44836506C573184BE11686E80BC3A496 /* Konashi+ACDrive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Konashi+ACDrive.m"; path = "Konashi/Konashi/Category/Konashi/Konashi+ACDrive.m"; sourceTree = "<group>"; };
+		44FCB377C47D64593C7D50E88520A9DD /* FAKZocial.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKZocial.h; path = FontAwesomeKit/FAKZocial.h; sourceTree = "<group>"; };
+		45294366A649EF89D5E99EE7194B44B6 /* JDStatusBarStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarStyle.h; path = JDStatusBarNotification/JDStatusBarStyle.h; sourceTree = "<group>"; };
+		45B3A46C45A7A3317930E495125D12C4 /* FAKIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKIcon.m; path = FontAwesomeKit/FAKIcon.m; sourceTree = "<group>"; };
+		465DA6246EAF8497B7AB41E9DA9900C0 /* konashi-ios-sdk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "konashi-ios-sdk.xcconfig"; sourceTree = "<group>"; };
+		47B85009FE91AB96471306287604F445 /* JDStatusBarNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDStatusBarNotification-prefix.pch"; sourceTree = "<group>"; };
+		4D683BEDD8D0EB11352E2F2771F9DA65 /* CBService+Konashi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CBService+Konashi.m"; path = "Konashi/Konashi/Category/CoreBluetooth/CBService+Konashi.m"; sourceTree = "<group>"; };
+		4E14F7F7E87EBF5C0371F70CE47696C5 /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.otf; path = FontAwesomeKit/FontAwesome.otf; sourceTree = "<group>"; };
+		4E5C2179844C584A50CC5DBAB6803FC5 /* Pods-KonashiInspector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KonashiInspector.debug.xcconfig"; sourceTree = "<group>"; };
+		4EE3A865F49FD7E3CEE264D1D9AA6E72 /* KNSKonashiPeripheralImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KNSKonashiPeripheralImpl.h; path = Konashi/Konashi/Impl/KNSKonashiPeripheralImpl.h; sourceTree = "<group>"; };
+		4F5CE2C0D75A71FA4A2BEE28A272978A /* M2DWebViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = M2DWebViewController.xcconfig; sourceTree = "<group>"; };
+		4FBE908C36F2F004F02423B65510F4BA /* libFontAwesomeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFontAwesomeKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		527417E10E1D6783308705D7B61F1A7F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
+		52DA5C920F7E15CC5DA70D449DB0853A /* SWUtilityButtonTapGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWUtilityButtonTapGestureRecognizer.h; path = SWTableViewCell/PodFiles/SWUtilityButtonTapGestureRecognizer.h; sourceTree = "<group>"; };
+		533CBF9B287257BEAA94B1E698D8CD4E /* FAKIonIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKIonIcons.m; path = FontAwesomeKit/FAKIonIcons.m; sourceTree = "<group>"; };
+		53A879BEACDBE2CEA33B2D56672C0DE0 /* Konashi+Grove.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Konashi+Grove.h"; path = "Konashi/Konashi/Category/Konashi/Konashi+Grove.h"; sourceTree = "<group>"; };
+		53E82EF9FEB1B97ACE1B2BCA401A082C /* AMViralSwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMViralSwitch-prefix.pch"; sourceTree = "<group>"; };
+		5560DEF3BF7AAD71B6AC277976170AF0 /* foundation-icons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "foundation-icons.ttf"; path = "FontAwesomeKit/foundation-icons.ttf"; sourceTree = "<group>"; };
+		55DE308239E1E6BE514B7FFC03D1CCAE /* JDStatusBarStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarStyle.m; path = JDStatusBarNotification/JDStatusBarStyle.m; sourceTree = "<group>"; };
+		58B7FDE4AE52AF390D2F5A7DAF99F741 /* AMViralSwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMViralSwitch-dummy.m"; sourceTree = "<group>"; };
+		5A5030757A684607339EB0C93434AF0C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		5F3696D0ABDA327AD28B9BB844C292FC /* SWCellScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWCellScrollView.m; path = SWTableViewCell/PodFiles/SWCellScrollView.m; sourceTree = "<group>"; };
+		6196016E400FE65662E312DFB7A3E2A6 /* Konashi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Konashi.m; path = Konashi/Konashi/Konashi.m; sourceTree = "<group>"; };
+		61C05B24F6A89B99837AACA31A13B73A /* AMViralSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMViralSwitch.m; path = Source/AMViralSwitch.m; sourceTree = "<group>"; };
+		6D0553554B3F4FC585033F760F16DB51 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		6F5EC2D1D2B3DA4824AC356A8D6AD1FF /* KNSCentralManager+UI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KNSCentralManager+UI.h"; path = "Konashi/Konashi/Category/Konashi/KNSCentralManager+UI.h"; sourceTree = "<group>"; };
+		73A11EB51D6DC52946237B35B2D5A31F /* AMViralSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMViralSwitch.h; path = Source/AMViralSwitch.h; sourceTree = "<group>"; };
+		79EC0F919072B56A1C4736716EE3A6DC /* SWTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWTableViewCell.m; path = SWTableViewCell/PodFiles/SWTableViewCell.m; sourceTree = "<group>"; };
+		7AFA306074F30BF92176442AE990945E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		7C70890559311A9752C4A3A65E96C2BA /* KNSPeripheral.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KNSPeripheral.m; path = Konashi/Konashi/KNSPeripheral.m; sourceTree = "<group>"; };
+		7D7309970C6C106FAE2926EE8F8041C9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		7DF213C0947797E5432211B3448C3364 /* Konashi+Grove.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Konashi+Grove.m"; path = "Konashi/Konashi/Category/Konashi/Konashi+Grove.m"; sourceTree = "<group>"; };
+		82611763015371974CD1F65B32645B61 /* KonashiConstant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KonashiConstant.h; path = Konashi/Konashi/Constant/KonashiConstant.h; sourceTree = "<group>"; };
+		8299F060E3AC0AB11670AFECF44D6F6E /* FontAwesomeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FontAwesomeKit.h; path = FontAwesomeKit/FontAwesomeKit.h; sourceTree = "<group>"; };
+		87D2B0EC1F69B5155D691D57C3CF3070 /* JDStatusBarNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarNotification.m; path = JDStatusBarNotification/JDStatusBarNotification.m; sourceTree = "<group>"; };
+		88BBD88CCC81DDB3B73DAC9C9DD6E8A4 /* KNSCentralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KNSCentralManager.h; path = Konashi/Konashi/KNSCentralManager.h; sourceTree = "<group>"; };
+		8A9A709F68CE9FED05E10B3C98F4D78F /* ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = ionicons.ttf; path = FontAwesomeKit/ionicons.ttf; sourceTree = "<group>"; };
+		8D1E41D291A37753EE93E856A17E95FB /* KNSCentralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KNSCentralManager.m; path = Konashi/Konashi/KNSCentralManager.m; sourceTree = "<group>"; };
+		91AEA0A98C197049CBF5F5134AACC69E /* FontAwesomeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesomeKit-prefix.pch"; sourceTree = "<group>"; };
+		937D7DC83C5A53BA06EF6BE8DCEA2E25 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		9B11CC30271AD82CB3C23705D79697DF /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		9B3AB83C39154961048D9116FAED5360 /* FAKZocial.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKZocial.m; path = FontAwesomeKit/FAKZocial.m; sourceTree = "<group>"; };
+		9C9AFC5ED73C9D427EDEB5EC69C521FE /* KNSPeripheralBaseImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KNSPeripheralBaseImpl.h; path = Konashi/Konashi/Impl/KNSPeripheralBaseImpl.h; sourceTree = "<group>"; };
+		9FF60DB9027B9510E235F119BBDA865E /* Konashi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Konashi.h; path = Konashi/Konashi/Konashi.h; sourceTree = "<group>"; };
+		A286D976B8534223DAF3315236B93A92 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A330DF8F2E404AB3020E3AA378A0D0A7 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		A36739EA3D22ED61FA456F38D338A062 /* SWUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWUtilityButtonTapGestureRecognizer.m; path = SWTableViewCell/PodFiles/SWUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
+		A3982555C1BF8F258C6F68A1D4DBAEEA /* SWTableViewCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWTableViewCell.xcconfig; sourceTree = "<group>"; };
+		A4E65861BBFB7BA92F0E84EB371E11E2 /* Pods-KonashiInspector-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KonashiInspector-resources.sh"; sourceTree = "<group>"; };
+		AA0A7BA450FF7AA6AC9AF07B27857837 /* libSWTableViewCell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSWTableViewCell.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4C28AD1D3C3FF2888D34730F77490E /* KNSKoshianPeripheralImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KNSKoshianPeripheralImpl.m; path = Konashi/Konashi/Impl/KNSKoshianPeripheralImpl.m; sourceTree = "<group>"; };
+		AE79F6BC6C312D2B6FA88D14CA59D8B5 /* M2DWebViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M2DWebViewController-prefix.pch"; sourceTree = "<group>"; };
+		B0AAF38095B7B950DA34D69DC300D564 /* Konashi+JavaScriptBindings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Konashi+JavaScriptBindings.h"; path = "Konashi/Konashi/Category/Konashi/Konashi+JavaScriptBindings.h"; sourceTree = "<group>"; };
+		B8A2981FB64AA7844AE7F7A995ADA64C /* JDStatusBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarView.h; path = JDStatusBarNotification/JDStatusBarView.h; sourceTree = "<group>"; };
+		B91F075A1E584DAF5089B95C8DC3E30D /* KNSPeripheralImpls.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KNSPeripheralImpls.h; path = Konashi/Konashi/Impl/KNSPeripheralImpls.h; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB25A47923C0009F0C56EF0046D32819 /* Pods-KonashiInspector-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KonashiInspector-acknowledgements.plist"; sourceTree = "<group>"; };
+		BBE4356C70EB60BF952E06DA71A3137E /* CBUUID+Konashi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CBUUID+Konashi.m"; path = "Konashi/Konashi/Category/CoreBluetooth/CBUUID+Konashi.m"; sourceTree = "<group>"; };
+		BE3A40E8B6F9C8FC9BEB493740B10572 /* CBUUID+Konashi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CBUUID+Konashi.h"; path = "Konashi/Konashi/Category/CoreBluetooth/CBUUID+Konashi.h"; sourceTree = "<group>"; };
+		BF7D88437D95F8A8E9F2877D2F266592 /* FAKFoundationIcons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKFoundationIcons.m; path = FontAwesomeKit/FAKFoundationIcons.m; sourceTree = "<group>"; };
+		C282ADE37587AB3C03F02A48A501CED6 /* Pods-KonashiInspector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KonashiInspector.release.xcconfig"; sourceTree = "<group>"; };
+		C2896D2157B03C8D76BA25D828216719 /* Pods-KonashiInspector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KonashiInspector-dummy.m"; sourceTree = "<group>"; };
+		C4F6873F1DE3C82E62AD489AB2EC8661 /* JDStatusBarNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JDStatusBarNotification.xcconfig; sourceTree = "<group>"; };
+		C67E6254F9BE984224D672003A255F6B /* konashi-ios-sdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "konashi-ios-sdk-dummy.m"; sourceTree = "<group>"; };
+		C6E7F2B91BDFFF31DD9A142648C4D43C /* M2DWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M2DWebViewController.h; path = Pod/Classes/M2DWebViewController/M2DWebViewController.h; sourceTree = "<group>"; };
+		C7780818E8A00ECA0D04EB4DE364BB26 /* FontAwesomeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesomeKit-dummy.m"; sourceTree = "<group>"; };
+		D12F15F7B6644AD34CC1C8CD6AD90A97 /* libJDStatusBarNotification.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJDStatusBarNotification.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D144D291FEFA0C7DCADD3B5217409B67 /* SWTableViewCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWTableViewCell-dummy.m"; sourceTree = "<group>"; };
+		D1CA82D9D539708AC389805FFF3B0C61 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		D6D00286AD6C4E289D28ACCD90509D88 /* KonashiUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KonashiUtils.h; path = Konashi/Konashi/KonashiUtils.h; sourceTree = "<group>"; };
+		DA98FEDEB20CD4E63BA4186C2C3F4626 /* SWCellScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWCellScrollView.h; path = SWTableViewCell/PodFiles/SWCellScrollView.h; sourceTree = "<group>"; };
+		DDEEA62C542E214BA5F033E182CDA6C3 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		DFC2486879D033787B0127334FF065CB /* FAKFontAwesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKFontAwesome.m; path = FontAwesomeKit/FAKFontAwesome.m; sourceTree = "<group>"; };
+		E046CF9C0BB7ED3459D132762C9F7E31 /* libAMViralSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAMViralSwitch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E27083046D7835872DB4FB29564D61A8 /* Pods-KonashiInspector-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KonashiInspector-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E4D2C6C59EA405EA2CCE5018A7695337 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E59EA5D474B2EF769CDDDE815CDDF92D /* KNSPeripheralImplProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KNSPeripheralImplProtocol.h; path = Konashi/Konashi/Impl/KNSPeripheralImplProtocol.h; sourceTree = "<group>"; };
+		E9CC1573A58E61884E08A2D888203934 /* M2DWebViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "M2DWebViewController-dummy.m"; sourceTree = "<group>"; };
+		EB01CEE0EB05A4B3B40C69DA76EE2EE3 /* KNSKoshianPeripheralImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KNSKoshianPeripheralImpl.h; path = Konashi/Konashi/Impl/KNSKoshianPeripheralImpl.h; sourceTree = "<group>"; };
+		EB78DDCF2AE9F4895376EF7C644026EC /* konashi-ios-sdk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "konashi-ios-sdk-prefix.pch"; sourceTree = "<group>"; };
+		EC14E92D032EEF44C77A40B57FAA9E98 /* SWLongPressGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWLongPressGestureRecognizer.h; path = SWTableViewCell/PodFiles/SWLongPressGestureRecognizer.h; sourceTree = "<group>"; };
+		ED686BC12722998C2551722A5F955B36 /* libkonashi-ios-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libkonashi-ios-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA7461D32B4F706E3021622DA81C660 /* JDStatusBarNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDStatusBarNotification-dummy.m"; sourceTree = "<group>"; };
+		EE1A34A5B4490ADC031C5B84DB205CA1 /* FAKIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKIcon.h; path = FontAwesomeKit/FAKIcon.h; sourceTree = "<group>"; };
+		F2884DC907EE40C53231F2113081DA48 /* SWUtilityButtonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWUtilityButtonView.h; path = SWTableViewCell/PodFiles/SWUtilityButtonView.h; sourceTree = "<group>"; };
+		F417DC6458A1FC6832F296B956BB4E29 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		F808E3DC7641931429B56C4682685CC6 /* M2DWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M2DWebViewController.m; path = Pod/Classes/M2DWebViewController/M2DWebViewController.m; sourceTree = "<group>"; };
+		F8D7E9F88168ED882E6D7A2EF0E2E31A /* CBPeripheral+Konashi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CBPeripheral+Konashi.m"; path = "Konashi/Konashi/Category/CoreBluetooth/CBPeripheral+Konashi.m"; sourceTree = "<group>"; };
+		FBEC924D473FB908592175671E2F59A5 /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+SWUtilityButtons.h"; path = "SWTableViewCell/PodFiles/NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
+		FE6DBCAC2439EFE534F40A549AF8B905 /* SWTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWTableViewCell.h; path = SWTableViewCell/PodFiles/SWTableViewCell.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26A8588EE2DA0875802B32981439E599 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDFED50D5AD144CA068E29508992BAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D9C8BD8A582B2BCE6C1D6952C664FE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635E7C50994D03908773F7B0B002FA36 /* Foundation.framework in Frameworks */,
+				775374250D4D2FF84A1AC3213179E9CB /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E6C2C3C398FFE52E756B1041AD4E75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE025E7D14FC8FA827C591D0B634B70A /* Foundation.framework in Frameworks */,
+				22CD587008153C4985E57ED66D7AE0F6 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC4877D8D2F57A615DE5FC4B2264ED0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC32F90214F34DDD0E6E1E024FBF431A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8448DF6C6076D74248D29AA2AC4C51C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A88D02610334A36200A1B03A85FA8A5C /* CoreText.framework in Frameworks */,
+				6378262FF291F8F36830CBD4D00BAF0E /* Foundation.framework in Frameworks */,
+				24F96846664E55BE5F82886EDB921DB8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2B3DAB934A464162F2269CA4005BC5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FD290365CA99E78F7E9388921EFB09 /* CoreBluetooth.framework in Frameworks */,
+				3F9A51882FCC1347F159973970390436 /* Foundation.framework in Frameworks */,
+				782B8070C9BA0510D06275E647A07A01 /* JavaScriptCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6D0A6BBF9DBFEC42697980258BF67F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7402B14FDB278119E857A83BCBB663B7 /* Foundation.framework in Frameworks */,
+				0298CF80907804E18C783EE18AF42CE9 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9C4ED26517026C3B76D8EEF11B61A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D214D2508C4AF3D723C2ED25D64E9CA8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08CCC0A1B4B7E824B62C72C7D223F907 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F417DC6458A1FC6832F296B956BB4E29 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0C0EDC47BD84D0E3F51E2BC99D0CB0CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E046CF9C0BB7ED3459D132762C9F7E31 /* libAMViralSwitch.a */,
+				4FBE908C36F2F004F02423B65510F4BA /* libFontAwesomeKit.a */,
+				D12F15F7B6644AD34CC1C8CD6AD90A97 /* libJDStatusBarNotification.a */,
+				ED686BC12722998C2551722A5F955B36 /* libkonashi-ios-sdk.a */,
+				181C0F2E6A30CC9601FBFD3711EC9C75 /* libM2DWebViewController.a */,
+				16C5A26AE045ACD6DC3672741161EA28 /* libPods-KonashiInspector.a */,
+				A286D976B8534223DAF3315236B93A92 /* libSVProgressHUD.a */,
+				AA0A7BA450FF7AA6AC9AF07B27857837 /* libSWTableViewCell.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C6EA32088B9851FE0127D2FEA401453 /* SWTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FBEC924D473FB908592175671E2F59A5 /* NSMutableArray+SWUtilityButtons.h */,
+				3AB2022A189AE4E0C290F90AEB12AA0F /* NSMutableArray+SWUtilityButtons.m */,
+				DA98FEDEB20CD4E63BA4186C2C3F4626 /* SWCellScrollView.h */,
+				5F3696D0ABDA327AD28B9BB844C292FC /* SWCellScrollView.m */,
+				EC14E92D032EEF44C77A40B57FAA9E98 /* SWLongPressGestureRecognizer.h */,
+				32DBA35B58B1552E5849A607D3D71A8F /* SWLongPressGestureRecognizer.m */,
+				FE6DBCAC2439EFE534F40A549AF8B905 /* SWTableViewCell.h */,
+				79EC0F919072B56A1C4736716EE3A6DC /* SWTableViewCell.m */,
+				52DA5C920F7E15CC5DA70D449DB0853A /* SWUtilityButtonTapGestureRecognizer.h */,
+				A36739EA3D22ED61FA456F38D338A062 /* SWUtilityButtonTapGestureRecognizer.m */,
+				F2884DC907EE40C53231F2113081DA48 /* SWUtilityButtonView.h */,
+				0A5B67B482B0FB590BB1D09E2E2BFDD0 /* SWUtilityButtonView.m */,
+				5F32FD304C6854D41E2A6DC6C188A293 /* Support Files */,
+			);
+			path = SWTableViewCell;
+			sourceTree = "<group>";
+		};
+		2385ADD32F35E5C2995C5FC8A5A226E9 /* JDStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				26A45A700999A00BFF054634E216A1B5 /* JDStatusBarNotification.h */,
+				87D2B0EC1F69B5155D691D57C3CF3070 /* JDStatusBarNotification.m */,
+				45294366A649EF89D5E99EE7194B44B6 /* JDStatusBarStyle.h */,
+				55DE308239E1E6BE514B7FFC03D1CCAE /* JDStatusBarStyle.m */,
+				B8A2981FB64AA7844AE7F7A995ADA64C /* JDStatusBarView.h */,
+				22A62AA8C98F91A1FF48E896ED7AEDD3 /* JDStatusBarView.m */,
+				E975C27542AFAB8807906309F3719DA3 /* Support Files */,
+			);
+			path = JDStatusBarNotification;
+			sourceTree = "<group>";
+		};
+		398E3A8C481D5374627C2EFA5D6222B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				17C469EDACB281DC1EFF33E8E52E567F /* zocial-regular-webfont.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		45AE5EB89A70012DA46DD844BC6825C7 /* konashi-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				0B43E60029BD1A60D3E63A5804D58194 /* CBPeripheral+Konashi.h */,
+				F8D7E9F88168ED882E6D7A2EF0E2E31A /* CBPeripheral+Konashi.m */,
+				0B1359523E9C38D076E7B68206862176 /* CBService+Konashi.h */,
+				4D683BEDD8D0EB11352E2F2771F9DA65 /* CBService+Konashi.m */,
+				BE3A40E8B6F9C8FC9BEB493740B10572 /* CBUUID+Konashi.h */,
+				BBE4356C70EB60BF952E06DA71A3137E /* CBUUID+Konashi.m */,
+				88BBD88CCC81DDB3B73DAC9C9DD6E8A4 /* KNSCentralManager.h */,
+				8D1E41D291A37753EE93E856A17E95FB /* KNSCentralManager.m */,
+				6F5EC2D1D2B3DA4824AC356A8D6AD1FF /* KNSCentralManager+UI.h */,
+				11797E173EDB058D9DA1800D4DAB163D /* KNSCentralManager+UI.m */,
+				33A8A5FA4AC86E5C656B0D265BAACB8A /* KNSHandlerManager.h */,
+				3C851206836A47BFA601B7CCAA878971 /* KNSHandlerManager.m */,
+				4EE3A865F49FD7E3CEE264D1D9AA6E72 /* KNSKonashiPeripheralImpl.h */,
+				3ACCA0EB76805B72CFB3D02DEAEA5CC2 /* KNSKonashiPeripheralImpl.m */,
+				EB01CEE0EB05A4B3B40C69DA76EE2EE3 /* KNSKoshianPeripheralImpl.h */,
+				AB4C28AD1D3C3FF2888D34730F77490E /* KNSKoshianPeripheralImpl.m */,
+				22AD8EECD1E06150E4B388D326C18DC0 /* KNSPeripheral.h */,
+				7C70890559311A9752C4A3A65E96C2BA /* KNSPeripheral.m */,
+				9C9AFC5ED73C9D427EDEB5EC69C521FE /* KNSPeripheralBaseImpl.h */,
+				40764ECCF7BE1850C73E805EDDB445E7 /* KNSPeripheralBaseImpl.m */,
+				E59EA5D474B2EF769CDDDE815CDDF92D /* KNSPeripheralImplProtocol.h */,
+				B91F075A1E584DAF5089B95C8DC3E30D /* KNSPeripheralImpls.h */,
+				9FF60DB9027B9510E235F119BBDA865E /* Konashi.h */,
+				6196016E400FE65662E312DFB7A3E2A6 /* Konashi.m */,
+				0E9C5CAAEA6C7147C1822C9525B2AD90 /* Konashi+ACDrive.h */,
+				44836506C573184BE11686E80BC3A496 /* Konashi+ACDrive.m */,
+				2888E3CFCD58D4782856D479EBD04E80 /* Konashi+ADC.h */,
+				22D726FEF8721B7CDC76B0A8B6DF134A /* Konashi+ADC.m */,
+				53A879BEACDBE2CEA33B2D56672C0DE0 /* Konashi+Grove.h */,
+				7DF213C0947797E5432211B3448C3364 /* Konashi+Grove.m */,
+				B0AAF38095B7B950DA34D69DC300D564 /* Konashi+JavaScriptBindings.h */,
+				136B89A56428ACA5C03E97C744FFB8AE /* Konashi+JavaScriptBindings.m */,
+				82611763015371974CD1F65B32645B61 /* KonashiConstant.h */,
+				0F2E19A273297FBB122E054B7B84AFCE /* KonashiJavaScriptBindingsProtocol.h */,
+				D6D00286AD6C4E289D28ACCD90509D88 /* KonashiUtils.h */,
+				314732989AEAC7E45298DF0B8E2C243C /* KonashiUtils.m */,
+				9FFD0C2529C36F5E7ECBBB7F692A4FDF /* Support Files */,
+			);
+			path = "konashi-ios-sdk";
+			sourceTree = "<group>";
+		};
+		515ADCBD3B0C65CDCCE392177915BEC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D94C7474A49679EF79AEF59139C815C8 /* AMViralSwitch */,
+				6F4158A48464EB2BC89700D6DC62251D /* FontAwesomeKit */,
+				2385ADD32F35E5C2995C5FC8A5A226E9 /* JDStatusBarNotification */,
+				45AE5EB89A70012DA46DD844BC6825C7 /* konashi-ios-sdk */,
+				63E07225C549FDF38AB1B3C88E3A215D /* M2DWebViewController */,
+				6B572C78C2B97CF368F64B4CF8F21C3D /* SVProgressHUD */,
+				1C6EA32088B9851FE0127D2FEA401453 /* SWTableViewCell */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F32FD304C6854D41E2A6DC6C188A293 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3982555C1BF8F258C6F68A1D4DBAEEA /* SWTableViewCell.xcconfig */,
+				D144D291FEFA0C7DCADD3B5217409B67 /* SWTableViewCell-dummy.m */,
+				385E36A4A7935CAB4F1EDEE3ADF9B82C /* SWTableViewCell-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SWTableViewCell";
+			sourceTree = "<group>";
+		};
+		6134DA6C8F94F5015782C0BB42C23406 /* FoundationIcons */ = {
+			isa = PBXGroup;
+			children = (
+				0004FD67B4E3A916610AD5EF4EE722AD /* FAKFoundationIcons.h */,
+				BF7D88437D95F8A8E9F2877D2F266592 /* FAKFoundationIcons.m */,
+				F879B46FCE2FD2C410BB882C5FC665D0 /* Resources */,
+			);
+			name = FoundationIcons;
+			sourceTree = "<group>";
+		};
+		63E07225C549FDF38AB1B3C88E3A215D /* M2DWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C6E7F2B91BDFFF31DD9A142648C4D43C /* M2DWebViewController.h */,
+				F808E3DC7641931429B56C4682685CC6 /* M2DWebViewController.m */,
+				8B0B6130B0BBB14FE5684FA1E1815C66 /* Support Files */,
+			);
+			path = M2DWebViewController;
+			sourceTree = "<group>";
+		};
+		6B572C78C2B97CF368F64B4CF8F21C3D /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				D1CA82D9D539708AC389805FFF3B0C61 /* SVIndefiniteAnimatedView.h */,
+				937D7DC83C5A53BA06EF6BE8DCEA2E25 /* SVIndefiniteAnimatedView.m */,
+				135246FC7360D5B568A8EE857E74CF3A /* SVProgressHUD.h */,
+				12BE51C942F66D26763DF345CA8AE882 /* SVProgressHUD.m */,
+				08CCC0A1B4B7E824B62C72C7D223F907 /* Resources */,
+				D0070B6103F6FCB2FA2BB6AFC45BBCFC /* Support Files */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		6F4158A48464EB2BC89700D6DC62251D /* FontAwesomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				8299F060E3AC0AB11670AFECF44D6F6E /* FontAwesomeKit.h */,
+				9487018953077618235FCB8279206840 /* Core */,
+				BDC8FBE9146E530850687155E1F2F2C8 /* FontAwesome */,
+				6134DA6C8F94F5015782C0BB42C23406 /* FoundationIcons */,
+				A5735C99B41FD454DB4CB39E286E54C9 /* IonIcons */,
+				76E53E4290E7DBE75798E0EB0C8AE261 /* Support Files */,
+				9A081A80BAE84815777187C39059E68A /* Zocial */,
+			);
+			path = FontAwesomeKit;
+			sourceTree = "<group>";
+		};
+		74FA90BBE5578F345E61DF1089E9CE1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A9A709F68CE9FED05E10B3C98F4D78F /* ionicons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		76E53E4290E7DBE75798E0EB0C8AE261 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EE5AEA28B9ED8EC3746C6069038066A /* FontAwesomeKit.xcconfig */,
+				C7780818E8A00ECA0D04EB4DE364BB26 /* FontAwesomeKit-dummy.m */,
+				91AEA0A98C197049CBF5F5134AACC69E /* FontAwesomeKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FontAwesomeKit";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */,
+				515ADCBD3B0C65CDCCE392177915BEC8 /* Pods */,
+				0C0EDC47BD84D0E3F51E2BC99D0CB0CC /* Products */,
+				F856AC2874C45E64680DCA6DF81D61EC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B0B6130B0BBB14FE5684FA1E1815C66 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F5CE2C0D75A71FA4A2BEE28A272978A /* M2DWebViewController.xcconfig */,
+				E9CC1573A58E61884E08A2D888203934 /* M2DWebViewController-dummy.m */,
+				AE79F6BC6C312D2B6FA88D14CA59D8B5 /* M2DWebViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/M2DWebViewController";
+			sourceTree = "<group>";
+		};
+		9487018953077618235FCB8279206840 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EE1A34A5B4490ADC031C5B84DB205CA1 /* FAKIcon.h */,
+				45B3A46C45A7A3317930E495125D12C4 /* FAKIcon.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9A081A80BAE84815777187C39059E68A /* Zocial */ = {
+			isa = PBXGroup;
+			children = (
+				44FCB377C47D64593C7D50E88520A9DD /* FAKZocial.h */,
+				9B3AB83C39154961048D9116FAED5360 /* FAKZocial.m */,
+				398E3A8C481D5374627C2EFA5D6222B4 /* Resources */,
+			);
+			name = Zocial;
+			sourceTree = "<group>";
+		};
+		9C46DA81AFBCA7B0A34AA1543C1CDCA7 /* Pods-KonashiInspector */ = {
+			isa = PBXGroup;
+			children = (
+				E27083046D7835872DB4FB29564D61A8 /* Pods-KonashiInspector-acknowledgements.markdown */,
+				BB25A47923C0009F0C56EF0046D32819 /* Pods-KonashiInspector-acknowledgements.plist */,
+				C2896D2157B03C8D76BA25D828216719 /* Pods-KonashiInspector-dummy.m */,
+				2CAC4A325D2158C5E337EA440AA9D96A /* Pods-KonashiInspector-frameworks.sh */,
+				A4E65861BBFB7BA92F0E84EB371E11E2 /* Pods-KonashiInspector-resources.sh */,
+				4E5C2179844C584A50CC5DBAB6803FC5 /* Pods-KonashiInspector.debug.xcconfig */,
+				C282ADE37587AB3C03F02A48A501CED6 /* Pods-KonashiInspector.release.xcconfig */,
+			);
+			name = "Pods-KonashiInspector";
+			path = "Target Support Files/Pods-KonashiInspector";
+			sourceTree = "<group>";
+		};
+		9FFD0C2529C36F5E7ECBBB7F692A4FDF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				465DA6246EAF8497B7AB41E9DA9900C0 /* konashi-ios-sdk.xcconfig */,
+				C67E6254F9BE984224D672003A255F6B /* konashi-ios-sdk-dummy.m */,
+				EB78DDCF2AE9F4895376EF7C644026EC /* konashi-ios-sdk-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/konashi-ios-sdk";
+			sourceTree = "<group>";
+		};
+		A5735C99B41FD454DB4CB39E286E54C9 /* IonIcons */ = {
+			isa = PBXGroup;
+			children = (
+				19F9AF230F376F5595D375845221DF73 /* FAKIonIcons.h */,
+				533CBF9B287257BEAA94B1E698D8CD4E /* FAKIonIcons.m */,
+				74FA90BBE5578F345E61DF1089E9CE1C /* Resources */,
+			);
+			name = IonIcons;
+			sourceTree = "<group>";
+		};
+		BDC8FBE9146E530850687155E1F2F2C8 /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				4479D8FFCAD2ED821EB42454FE2D8B98 /* FAKFontAwesome.h */,
+				DFC2486879D033787B0127334FF065CB /* FAKFontAwesome.m */,
+				F634CFC35D95D480D982227D99CE775A /* Resources */,
+			);
+			name = FontAwesome;
+			sourceTree = "<group>";
+		};
+		D0070B6103F6FCB2FA2BB6AFC45BBCFC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D0553554B3F4FC585033F760F16DB51 /* SVProgressHUD.xcconfig */,
+				DDEEA62C542E214BA5F033E182CDA6C3 /* SVProgressHUD-dummy.m */,
+				A330DF8F2E404AB3020E3AA378A0D0A7 /* SVProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		D94C7474A49679EF79AEF59139C815C8 /* AMViralSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				73A11EB51D6DC52946237B35B2D5A31F /* AMViralSwitch.h */,
+				61C05B24F6A89B99837AACA31A13B73A /* AMViralSwitch.m */,
+				DABDB9E0F48DC9908BCC48AE018BAB43 /* Support Files */,
+			);
+			path = AMViralSwitch;
+			sourceTree = "<group>";
+		};
+		DABDB9E0F48DC9908BCC48AE018BAB43 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C5B3252CFA759D1E7A61586F99CD59C /* AMViralSwitch.xcconfig */,
+				58B7FDE4AE52AF390D2F5A7DAF99F741 /* AMViralSwitch-dummy.m */,
+				53E82EF9FEB1B97ACE1B2BCA401A082C /* AMViralSwitch-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AMViralSwitch";
+			sourceTree = "<group>";
+		};
+		DAC6F9D36BA0E640DBF8F95E7C66FE52 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				527417E10E1D6783308705D7B61F1A7F /* CoreBluetooth.framework */,
+				5A5030757A684607339EB0C93434AF0C /* CoreText.framework */,
+				E4D2C6C59EA405EA2CCE5018A7695337 /* Foundation.framework */,
+				9B11CC30271AD82CB3C23705D79697DF /* JavaScriptCore.framework */,
+				7AFA306074F30BF92176442AE990945E /* QuartzCore.framework */,
+				00ABFAC3833BB2B52218B1D0FCC280DD /* UIKit.framework */,
+				7D7309970C6C106FAE2926EE8F8041C9 /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E975C27542AFAB8807906309F3719DA3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4F6873F1DE3C82E62AD489AB2EC8661 /* JDStatusBarNotification.xcconfig */,
+				EDA7461D32B4F706E3021622DA81C660 /* JDStatusBarNotification-dummy.m */,
+				47B85009FE91AB96471306287604F445 /* JDStatusBarNotification-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JDStatusBarNotification";
+			sourceTree = "<group>";
+		};
+		F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAC6F9D36BA0E640DBF8F95E7C66FE52 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F634CFC35D95D480D982227D99CE775A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E14F7F7E87EBF5C0371F70CE47696C5 /* FontAwesome.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F856AC2874C45E64680DCA6DF81D61EC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C46DA81AFBCA7B0A34AA1543C1CDCA7 /* Pods-KonashiInspector */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F879B46FCE2FD2C410BB882C5FC665D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5560DEF3BF7AAD71B6AC277976170AF0 /* foundation-icons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A6AB07C8D786FC6D519A73DB0E73C52 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EB151A619CA295B2CB0C2E108181F8 /* CBPeripheral+Konashi.h in Headers */,
+				3EA8D54F129BDA1ECE0D9DCD7632B55E /* CBService+Konashi.h in Headers */,
+				D2215FC19313820B68E353EF0EEF59AD /* CBUUID+Konashi.h in Headers */,
+				DD06D9704BE9CD4B6250E1E599DD81BE /* KNSCentralManager+UI.h in Headers */,
+				AEBD720A1A0309645BE19090E565C69B /* KNSCentralManager.h in Headers */,
+				49DB563D52FC3536B178BEAC8C5CA76D /* KNSHandlerManager.h in Headers */,
+				B5B4D4BA97D510630C1ED9E303FCC2CA /* KNSKonashiPeripheralImpl.h in Headers */,
+				7536DE2FD677ED97EC83F183FF503826 /* KNSKoshianPeripheralImpl.h in Headers */,
+				7928B1B9D5CB94A2EF7EBEE9A0B45866 /* KNSPeripheral.h in Headers */,
+				D7390C0191BA392A61715913C6B3AEDD /* KNSPeripheralBaseImpl.h in Headers */,
+				A8A44ED2986BB942E9A59698546C8EC8 /* KNSPeripheralImplProtocol.h in Headers */,
+				14C78FCD4DA363A08231F3A9A3FD5C41 /* KNSPeripheralImpls.h in Headers */,
+				7E915D7ECD7D753EFE0770D91E00DF51 /* Konashi+ACDrive.h in Headers */,
+				149990BE6403629343DA5BF7BB744EF6 /* Konashi+ADC.h in Headers */,
+				8997AA517D998EAE0D243F8C3F791850 /* Konashi+Grove.h in Headers */,
+				F4BFD7B535692DDF63649BD29FAC9D5E /* Konashi+JavaScriptBindings.h in Headers */,
+				E04BFD7AD8027BCC3B8D030AFBE8DA8E /* Konashi.h in Headers */,
+				57C8B45467C7C218E73E27EA960EC35D /* KonashiConstant.h in Headers */,
+				1E06874A3D057A64E4726549E7BE3E70 /* KonashiJavaScriptBindingsProtocol.h in Headers */,
+				B54C0DD543F76B21AA00414CF661DACC /* KonashiUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17235BC72B6DE77DEEBDA93197D689E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FDD1949CF52FC9732E3B9DB9ADABEF /* NSMutableArray+SWUtilityButtons.h in Headers */,
+				CAC420AB4B06A052F4C5766377FB1629 /* SWCellScrollView.h in Headers */,
+				4C6BC94852D77D0B94CF82A5F8E009D2 /* SWLongPressGestureRecognizer.h in Headers */,
+				C2B78F3B472218E706ACBAE8DDA16A4F /* SWTableViewCell.h in Headers */,
+				EF7DB5ADABC12C3AA68887BDDF56DEFC /* SWUtilityButtonTapGestureRecognizer.h in Headers */,
+				3EFE28B8D161D76805E2BCC2018C53D7 /* SWUtilityButtonView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B0A7FC3D82519184A6544103CE3C39E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69647AF94E8681E30BF63362C3B5193F /* M2DWebViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6459F9CBD1258BAFD367707B0FF1DFC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CB6DD47FF4777C385574BD25532792 /* SVIndefiniteAnimatedView.h in Headers */,
+				6E63F32C68459E921882C6AEA40A2B2A /* SVProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BC7845ADDE6147E4AB46A9CD8D6944 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26E3AEA57EB195BC61C92DC57E14053 /* JDStatusBarNotification.h in Headers */,
+				49F5DAA52733A8FB0A955AA67DD73434 /* JDStatusBarStyle.h in Headers */,
+				5E1C4E650ED0762D5C93ADE6256A99A6 /* JDStatusBarView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		926A427BA7782E3BFB0D6E7289D921C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB956B31DF117839DA0E00F87C0FF4E /* FAKFontAwesome.h in Headers */,
+				E0E29147B7D8EC40D1A4F94C2C086B68 /* FAKFoundationIcons.h in Headers */,
+				FBF89427609542D56EC6215DD09F9F64 /* FAKIcon.h in Headers */,
+				87EAD6E2EE5C9F0B8FD227FD63E7A430 /* FAKIonIcons.h in Headers */,
+				8A6287B963D51F439C0EBE2D50F9391E /* FAKZocial.h in Headers */,
+				F4FA150B34A76E334EA6E07F1C22AAD6 /* FontAwesomeKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54C36BBEFB2E65B89EFCB49FA873C36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B542A6FB6853BDDD6AB9AFB544D71626 /* AMViralSwitch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2E40788C72F4564C8E5A67E055B8465F /* M2DWebViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A223FD869DB7991522D10BD9CDC283CB /* Build configuration list for PBXNativeTarget "M2DWebViewController" */;
+			buildPhases = (
+				D169DC97763051286AF99B4EEA9E24C1 /* Sources */,
+				2D9C8BD8A582B2BCE6C1D6952C664FE3 /* Frameworks */,
+				2B0A7FC3D82519184A6544103CE3C39E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = M2DWebViewController;
+			productName = M2DWebViewController;
+			productReference = 181C0F2E6A30CC9601FBFD3711EC9C75 /* libM2DWebViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		462C99638B38CDAAF9699F8AFC1B9966 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235C2433A59F1FA58F9F7AB55A8BCE91 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				EF7F049385E0EF101E16523804AF2378 /* Sources */,
+				D6D0A6BBF9DBFEC42697980258BF67F8 /* Frameworks */,
+				6459F9CBD1258BAFD367707B0FF1DFC9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = A286D976B8534223DAF3315236B93A92 /* libSVProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		62A9DDE9144C6890BC6D571EBEBC5BC9 /* SWTableViewCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F7B2CE3BB57FC1886720AF26AAF4CD /* Build configuration list for PBXNativeTarget "SWTableViewCell" */;
+			buildPhases = (
+				A99E039EC342D53357A59EC2FEEA232C /* Sources */,
+				ED9C4ED26517026C3B76D8EEF11B61A3 /* Frameworks */,
+				17235BC72B6DE77DEEBDA93197D689E6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWTableViewCell;
+			productName = SWTableViewCell;
+			productReference = AA0A7BA450FF7AA6AC9AF07B27857837 /* libSWTableViewCell.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		98187D50CB3823FA6598BF0449EC2AB0 /* AMViralSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CCAA895949FF20D8703542CCF30ADF3 /* Build configuration list for PBXNativeTarget "AMViralSwitch" */;
+			buildPhases = (
+				0E19976EB0B77516423E5160351EFAAC /* Sources */,
+				26A8588EE2DA0875802B32981439E599 /* Frameworks */,
+				B54C36BBEFB2E65B89EFCB49FA873C36 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMViralSwitch;
+			productName = AMViralSwitch;
+			productReference = E046CF9C0BB7ED3459D132762C9F7E31 /* libAMViralSwitch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BF7072BF048E9E35D9FAC80E7B185710 /* Pods-KonashiInspector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74EB94370E5EDF99E19B4DA9B099D434 /* Build configuration list for PBXNativeTarget "Pods-KonashiInspector" */;
+			buildPhases = (
+				D185009B2AF2B119168A54D1B696FBC2 /* Sources */,
+				5FC4877D8D2F57A615DE5FC4B2264ED0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				695B107B430E953E25A158716C41CE58 /* PBXTargetDependency */,
+				3810ADC049C0B29B5B57CF89D080E074 /* PBXTargetDependency */,
+				C8AA6BED3F5CE6316D4FF2E78F9FCD07 /* PBXTargetDependency */,
+				867BE4E716D161D6115C1E682B9D63C8 /* PBXTargetDependency */,
+				5B7D5B15E39EF97903288EB6502AB90E /* PBXTargetDependency */,
+				DBEE1FAAB5F7D4DF8C030D063856BDD7 /* PBXTargetDependency */,
+				B49B010C33C206B3CD6C3C66136F0031 /* PBXTargetDependency */,
+			);
+			name = "Pods-KonashiInspector";
+			productName = "Pods-KonashiInspector";
+			productReference = 16C5A26AE045ACD6DC3672741161EA28 /* libPods-KonashiInspector.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D9F1B3A3281633797F27632DF12DBFC6 /* FontAwesomeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7AF7AA01D254433277670BA389A011 /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */;
+			buildPhases = (
+				0DD399D1164635079CA1E8777F5CFE28 /* Sources */,
+				8448DF6C6076D74248D29AA2AC4C51C6 /* Frameworks */,
+				926A427BA7782E3BFB0D6E7289D921C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FontAwesomeKit;
+			productName = FontAwesomeKit;
+			productReference = 4FBE908C36F2F004F02423B65510F4BA /* libFontAwesomeKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DDCEC26E7C1C01111754F3897BAA1558 /* konashi-ios-sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8E4261AC03E35E54787415E8DD4DFBC /* Build configuration list for PBXNativeTarget "konashi-ios-sdk" */;
+			buildPhases = (
+				1B76A9EA26465B3E22E327808FD1CFE9 /* Sources */,
+				A2B3DAB934A464162F2269CA4005BC5F /* Frameworks */,
+				0A6AB07C8D786FC6D519A73DB0E73C52 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "konashi-ios-sdk";
+			productName = "konashi-ios-sdk";
+			productReference = ED686BC12722998C2551722A5F955B36 /* libkonashi-ios-sdk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FF5CFD6F2B044B2583AE363E38A9D0EF /* JDStatusBarNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1BE46C5D524474C308DC0C24C9855D /* Build configuration list for PBXNativeTarget "JDStatusBarNotification" */;
+			buildPhases = (
+				2DF4AB86540B1DBE5CEA281AB3BFB051 /* Sources */,
+				57E6C2C3C398FFE52E756B1041AD4E75 /* Frameworks */,
+				71BC7845ADDE6147E4AB46A9CD8D6944 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JDStatusBarNotification;
+			productName = JDStatusBarNotification;
+			productReference = D12F15F7B6644AD34CC1C8CD6AD90A97 /* libJDStatusBarNotification.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0900;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0C0EDC47BD84D0E3F51E2BC99D0CB0CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98187D50CB3823FA6598BF0449EC2AB0 /* AMViralSwitch */,
+				D9F1B3A3281633797F27632DF12DBFC6 /* FontAwesomeKit */,
+				FF5CFD6F2B044B2583AE363E38A9D0EF /* JDStatusBarNotification */,
+				DDCEC26E7C1C01111754F3897BAA1558 /* konashi-ios-sdk */,
+				2E40788C72F4564C8E5A67E055B8465F /* M2DWebViewController */,
+				BF7072BF048E9E35D9FAC80E7B185710 /* Pods-KonashiInspector */,
+				462C99638B38CDAAF9699F8AFC1B9966 /* SVProgressHUD */,
+				62A9DDE9144C6890BC6D571EBEBC5BC9 /* SWTableViewCell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DD399D1164635079CA1E8777F5CFE28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15550CF5996F31B47EA5A1E33F007D9 /* FAKFontAwesome.m in Sources */,
+				443CCE401CCB360E15825DD795AE1167 /* FAKFoundationIcons.m in Sources */,
+				F3CAAA253E2293EE587412503D8934CA /* FAKIcon.m in Sources */,
+				F89880759BAB2E38B268F456CECDA73B /* FAKIonIcons.m in Sources */,
+				580F3A708B2DBD20C3BA0A3DB8900DE8 /* FAKZocial.m in Sources */,
+				CDCC5F8C49D18065CE3610E7E8884FD5 /* FontAwesomeKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E19976EB0B77516423E5160351EFAAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7838FE38A1C1B15A8BDC04ED4E82B7F /* AMViralSwitch-dummy.m in Sources */,
+				EF6C07E4D743B8645C9C76E51A02C9BD /* AMViralSwitch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B76A9EA26465B3E22E327808FD1CFE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6400467481E4FC5022B938DEE53DED7 /* CBPeripheral+Konashi.m in Sources */,
+				1CB00D64156979AB66F5F1B1710D763C /* CBService+Konashi.m in Sources */,
+				57A2DA199D9658CB927E9DE020459B32 /* CBUUID+Konashi.m in Sources */,
+				CDF5926C584586000AFB8DBB2C10D531 /* KNSCentralManager+UI.m in Sources */,
+				CE300D07AC8D7099FDBD9FC389877F48 /* KNSCentralManager.m in Sources */,
+				C833621867A7310207E7984045FB907C /* KNSHandlerManager.m in Sources */,
+				B5238D3EC13327E9DE26D78ED3D81F82 /* KNSKonashiPeripheralImpl.m in Sources */,
+				4E1DE010FE99B34D78E0A1D266D11F90 /* KNSKoshianPeripheralImpl.m in Sources */,
+				E0ECBF04500922E27B4088D73C972979 /* KNSPeripheral.m in Sources */,
+				9BEC2E7D520398C05BA1D7DC9F3035DD /* KNSPeripheralBaseImpl.m in Sources */,
+				BE7130D8FD0EB939645C878B41B5B097 /* Konashi+ACDrive.m in Sources */,
+				1F1590D75F94FD124DFD3884822FEB23 /* Konashi+ADC.m in Sources */,
+				65242D4EAC695FA8B62601D9A799E517 /* Konashi+Grove.m in Sources */,
+				5AE072F2C681FA84825278AFC8D84DA4 /* Konashi+JavaScriptBindings.m in Sources */,
+				0E40000204CD27B724326C573C0DC7AA /* konashi-ios-sdk-dummy.m in Sources */,
+				49CE7D314D2FC4902888B6C54C897148 /* Konashi.m in Sources */,
+				E822F1FCC14F80B9DF7E8A87BAAAB8C5 /* KonashiUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DF4AB86540B1DBE5CEA281AB3BFB051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96BE867425427EC8B82931C5AF409ED /* JDStatusBarNotification-dummy.m in Sources */,
+				C00D5A278B5D2A008B1728F543C69C98 /* JDStatusBarNotification.m in Sources */,
+				ED24E92650F6911E4C99D7A98498551A /* JDStatusBarStyle.m in Sources */,
+				F5E0C579E931083BF3EFDCC9CD88C970 /* JDStatusBarView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99E039EC342D53357A59EC2FEEA232C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E3264FB0473162AB30CC1BFD445CC8 /* NSMutableArray+SWUtilityButtons.m in Sources */,
+				C306FE35882E2AD122C01A463B211241 /* SWCellScrollView.m in Sources */,
+				E45D43D1BF2CAAA81D456D87229EE391 /* SWLongPressGestureRecognizer.m in Sources */,
+				1509F5C261C8D5C35E7C0EF1D92FE0B8 /* SWTableViewCell-dummy.m in Sources */,
+				D28840F9840407357317E1269C98260A /* SWTableViewCell.m in Sources */,
+				56966FC105E43D7CD79633884121368D /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
+				35E23CE369CF3C3E4B3E7EF25D3266B6 /* SWUtilityButtonView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D169DC97763051286AF99B4EEA9E24C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2808CE8B004C9525DA03F907915B9F32 /* M2DWebViewController-dummy.m in Sources */,
+				A9CD5716FE4D49CFFD134BCF8A7DBFFE /* M2DWebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D185009B2AF2B119168A54D1B696FBC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CBCB4878BB9115284C233482102BC1C /* Pods-KonashiInspector-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7F049385E0EF101E16523804AF2378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB391F13C5E6C2A682CC399E6651BADD /* SVIndefiniteAnimatedView.m in Sources */,
+				7AAA9A4698E5795BFB35C28E686BA3FB /* SVProgressHUD-dummy.m in Sources */,
+				3F90B4A3138EED8DFD4A08123F541519 /* SVProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3810ADC049C0B29B5B57CF89D080E074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesomeKit;
+			target = D9F1B3A3281633797F27632DF12DBFC6 /* FontAwesomeKit */;
+			targetProxy = 603621758A70993E23EE573D884EB006 /* PBXContainerItemProxy */;
+		};
+		5B7D5B15E39EF97903288EB6502AB90E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 462C99638B38CDAAF9699F8AFC1B9966 /* SVProgressHUD */;
+			targetProxy = 9AE5752D1D823EC4510E01F7CAA67EC0 /* PBXContainerItemProxy */;
+		};
+		695B107B430E953E25A158716C41CE58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AMViralSwitch;
+			target = 98187D50CB3823FA6598BF0449EC2AB0 /* AMViralSwitch */;
+			targetProxy = 2B84DC7FCC9FF25320A5B44BF8DA7D73 /* PBXContainerItemProxy */;
+		};
+		867BE4E716D161D6115C1E682B9D63C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = M2DWebViewController;
+			target = 2E40788C72F4564C8E5A67E055B8465F /* M2DWebViewController */;
+			targetProxy = 7DFC7E33B4125CFFC61EC5EC939E3FE0 /* PBXContainerItemProxy */;
+		};
+		B49B010C33C206B3CD6C3C66136F0031 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "konashi-ios-sdk";
+			target = DDCEC26E7C1C01111754F3897BAA1558 /* konashi-ios-sdk */;
+			targetProxy = D535EF9709B336448A7436AC831689D6 /* PBXContainerItemProxy */;
+		};
+		C8AA6BED3F5CE6316D4FF2E78F9FCD07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JDStatusBarNotification;
+			target = FF5CFD6F2B044B2583AE363E38A9D0EF /* JDStatusBarNotification */;
+			targetProxy = 333E4A8594D492540C7248189E57FD7D /* PBXContainerItemProxy */;
+		};
+		DBEE1FAAB5F7D4DF8C030D063856BDD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWTableViewCell;
+			target = 62A9DDE9144C6890BC6D571EBEBC5BC9 /* SWTableViewCell */;
+			targetProxy = 91443BD906404DF51F550272FB87BA94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		090AB648883B7C2494CDAB3267487B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C5B3252CFA759D1E7A61586F99CD59C /* AMViralSwitch.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AMViralSwitch/AMViralSwitch-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		11BB444D27A596E9F31E2A2503EF37A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C5B3252CFA759D1E7A61586F99CD59C /* AMViralSwitch.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AMViralSwitch/AMViralSwitch-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		418ACF748D54D1F67481A3A9A750C47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F5CE2C0D75A71FA4A2BEE28A272978A /* M2DWebViewController.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/M2DWebViewController/M2DWebViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4B02FA96F817F42E8745CC61EBCD3553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4F6873F1DE3C82E62AD489AB2EC8661 /* JDStatusBarNotification.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JDStatusBarNotification/JDStatusBarNotification-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4ED1FC97E8AAE3C96FD424C0CE8B5A33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D0553554B3F4FC585033F760F16DB51 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		55DF3AA820D34C1414EDDC7175C54468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465DA6246EAF8497B7AB41E9DA9900C0 /* konashi-ios-sdk.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/konashi-ios-sdk/konashi-ios-sdk-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		61646ADCD89C097575BCDAF9BDC5C543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3982555C1BF8F258C6F68A1D4DBAEEA /* SWTableViewCell.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SWTableViewCell/SWTableViewCell-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6B3882B27F1AFDD9647EAB57FB67A601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5C2179844C584A50CC5DBAB6803FC5 /* Pods-KonashiInspector.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		739E38C6B11B722140C392C3218709B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465DA6246EAF8497B7AB41E9DA9900C0 /* konashi-ios-sdk.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/konashi-ios-sdk/konashi-ios-sdk-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		789A6DE168D3BBF6627DA7724B1BF3E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F5CE2C0D75A71FA4A2BEE28A272978A /* M2DWebViewController.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/M2DWebViewController/M2DWebViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		85686D283851A29AE3B08250B180794D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE5AEA28B9ED8EC3746C6069038066A /* FontAwesomeKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeKit/FontAwesomeKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9F0EE4212254C0B4E9499AD5C5E14D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D0553554B3F4FC585033F760F16DB51 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B02FB3B7386FD5A844B8E5B064065592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE5AEA28B9ED8EC3746C6069038066A /* FontAwesomeKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeKit/FontAwesomeKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B4E5AB7BF015FAA00C19BB9A144D4B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C282ADE37587AB3C03F02A48A501CED6 /* Pods-KonashiInspector.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B74656E27866A978E7962914C9E6A31A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3982555C1BF8F258C6F68A1D4DBAEEA /* SWTableViewCell.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SWTableViewCell/SWTableViewCell-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B98A70279DE1970D540221AF40CCD414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4F6873F1DE3C82E62AD489AB2EC8661 /* JDStatusBarNotification.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JDStatusBarNotification/JDStatusBarNotification-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		235C2433A59F1FA58F9F7AB55A8BCE91 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F0EE4212254C0B4E9499AD5C5E14D0D /* Debug */,
+				4ED1FC97E8AAE3C96FD424C0CE8B5A33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74EB94370E5EDF99E19B4DA9B099D434 /* Build configuration list for PBXNativeTarget "Pods-KonashiInspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B3882B27F1AFDD9647EAB57FB67A601 /* Debug */,
+				B4E5AB7BF015FAA00C19BB9A144D4B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A1BE46C5D524474C308DC0C24C9855D /* Build configuration list for PBXNativeTarget "JDStatusBarNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B02FA96F817F42E8745CC61EBCD3553 /* Debug */,
+				B98A70279DE1970D540221AF40CCD414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CCAA895949FF20D8703542CCF30ADF3 /* Build configuration list for PBXNativeTarget "AMViralSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090AB648883B7C2494CDAB3267487B80 /* Debug */,
+				11BB444D27A596E9F31E2A2503EF37A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A223FD869DB7991522D10BD9CDC283CB /* Build configuration list for PBXNativeTarget "M2DWebViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789A6DE168D3BBF6627DA7724B1BF3E3 /* Debug */,
+				418ACF748D54D1F67481A3A9A750C47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8E4261AC03E35E54787415E8DD4DFBC /* Build configuration list for PBXNativeTarget "konashi-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55DF3AA820D34C1414EDDC7175C54468 /* Debug */,
+				739E38C6B11B722140C392C3218709B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F7B2CE3BB57FC1886720AF26AAF4CD /* Build configuration list for PBXNativeTarget "SWTableViewCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B74656E27866A978E7962914C9E6A31A /* Debug */,
+				61646ADCD89C097575BCDAF9BDC5C543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7AF7AA01D254433277670BA389A011 /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85686D283851A29AE3B08250B180794D /* Debug */,
+				B02FB3B7386FD5A844B8E5B064065592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
