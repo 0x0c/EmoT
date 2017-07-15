@@ -70,13 +70,12 @@ namespace m2d {
 
 							float ratio = time / 32.0;
 							uint32_t c = this->strip.Color(img[row][idx][0] * ratio, img[row][idx][1] * ratio, img[row][idx][2] * ratio);
-							if (row % 2) {
+						 	if (row % 2) {
 								pos = (row + 1) * 16 - idx - 1;
 							}
 							this->strip.setPixelColor(pos, c);
 						}
 						this->strip.show();
-						delay(1);
 					}
 				}
 			 	else {
@@ -94,8 +93,7 @@ namespace m2d {
 							this->strip.setPixelColor(pos, c);
 						}
 						this->strip.show();
-						delay(1);
-					}
+			 		}
 				}
 			}
 		}

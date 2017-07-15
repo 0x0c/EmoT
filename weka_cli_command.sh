@@ -1,0 +1,1 @@
+java weka.classifiers.trees.J48 -t <path to arff>/pose.arff -c first -z PoseDetector > <path to output>/PoseDetector.java

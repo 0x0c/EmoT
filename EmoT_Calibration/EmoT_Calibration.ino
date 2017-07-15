@@ -14,7 +14,7 @@ void loop()
 {
 	if(Serial.available()) {
 		String str = Serial.readStringUntil('\r');
-		for(int i = 0; i < 2000; i++){
+		for(int i = 0; i < 500; i++){
 			tee->updateValues();
 			int s_l = tee->getSensorValue(EmoT::SensorPosition::SholderLeft);
 			int sj_l = tee->getSensorValue(EmoT::SensorPosition::SholderJointLeft);
