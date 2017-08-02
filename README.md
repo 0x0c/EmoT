@@ -59,3 +59,4 @@
 ## Exhibition
 - 東京大学制作展Extra SUKIMANIAC, 7/7~7/10, 2017
 - TEDxUTokyo, 7/16, 2017
+- Maker Faire Tokyo, 8/5~8/6, 2017
