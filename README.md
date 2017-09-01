@@ -1,6 +1,6 @@
 # EmoT
 
-![](https://github.com/0x0c/EmoT/raw/master/asset/photo/img.JPG)
+![](https://github.com/0x0c/EmoT/raw/master/asset/photo/top.jpg)
 
 ## Requirements
 
